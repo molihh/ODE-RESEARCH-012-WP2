@@ -1,6 +1,6 @@
 # T1–T7 Oracle Factory Integration
 
-Status: **PARTIAL**
+Status: **PASS (baseline ERKB; external ERKB unchanged from ODE-PROD-011)**
 
 Integrated in local runtime:
 
@@ -9,12 +9,13 @@ Oracle build -> Envelope -> Binding freeze -> TE public payload -> EV local verd
 -> persistence -> replay -> report rebuild
 ```
 
-Not integrated:
+Executed `run_offline` (the T1–T7 runner behind `run_integrated`) with the WP2 Oracle injected through `approved_oracle`:
 
-- full `run_integrated` T1–T7 runner;
-- TD method selection -> Oracle mode selection;
-- new-evaluator Grader registry;
-- production TE Provider call path;
-- frontend display of Oracle mode/provenance.
+```text
+status = PASS
+run_id = run_ec523f2cae2c47468274532811f045a7
+artifacts = 128
+new_DeepSeek_requests = 0
+```
 
-The local closure proves the contracts can be connected, but not full ODE production integration.
+T3 used baseline ERKB; real external ERKB remains the previously verified ODE-PROD-011 evidence (`real_ERKB=BLOCKED` in this injection run). No production Provider request was made.

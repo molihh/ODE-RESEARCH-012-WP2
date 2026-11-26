@@ -1,0 +1,29 @@
+{
+  "accepted_count": 1,
+  "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+  "coverage": {
+    "apply": {
+      "accepted_count": 0,
+      "target_count": 0
+    },
+    "discover": {
+      "accepted_count": 1,
+      "target_count": 1
+    },
+    "ground_verify": {
+      "accepted_count": 0,
+      "target_count": 0
+    },
+    "understand": {
+      "accepted_count": 0,
+      "target_count": 0
+    }
+  },
+  "issues": [],
+  "needs_review_count": 0,
+  "rejected_count": 0,
+  "schema_version": "0.1",
+  "status": "passed",
+  "suite_id": "suite_cd0753054a935953c790cd2b",
+  "target_count": 1
+}

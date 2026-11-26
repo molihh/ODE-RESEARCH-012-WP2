@@ -1,0 +1,114 @@
+{
+  "schema_version": "ode.oracle/1",
+  "oracle_id": "oracle_wp2_aclnnAdd_task_44475",
+  "version": "1.2.0-wp2",
+  "frozen": true,
+  "freeze_status": "FROZEN",
+  "review": {
+    "status": "APPROVED_INDEPENDENT",
+    "approved_by": "Owner",
+    "approval_ref": "ODE-PROD-010 conversation approval (2026-11-25 Asia/Shanghai)",
+    "independent_verification": "ORACLE_CANDIDATE_INDEPENDENCE_REPORT.md"
+  },
+  "source": {
+    "independent_of_td": true,
+    "kind": "TARGET_KB_PRIMARY_SOURCE",
+    "verification_paths": [
+      "A: Target KB identity tables",
+      "B: raw official markdown + parsed asset"
+    ]
+  },
+  "derived_from_oracle_sha256": "3d3cba5647ffec15db46a47b8e3c4f90c6f956d508099ff0ef7ad0e624a7132d",
+  "derivation": {
+    "type": "TASK_ID_REBIND_CANDIDATE",
+    "semantic_fields_changed": false,
+    "binding_fields_changed": [
+      "task_id",
+      "task_type"
+    ],
+    "governance_fields_changed": [
+      "oracle_id",
+      "version",
+      "frozen",
+      "freeze_status",
+      "review",
+      "derived_from_oracle_sha256",
+      "derivation"
+    ]
+  },
+  "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+  "asset_version": "9.2.0",
+  "document_id": "531700089d39d2560a73db308b593d7ca8702deac97d56b74174828dc214d1f4",
+  "document_title": "aclnnAdd&aclnnInplaceAdd",
+  "task_id": "task_44475cfab4a8c25b1c71ce82",
+  "task_type": "auto_d06",
+  "method_id": "D01",
+  "canonical_method_id": "CM-API-IDENTITY",
+  "method_contract": "EXACT_API_IDENTITY",
+  "api_id": "e73eb03c3bc1f30f8ca079eaedf484caf318fc7bf2aa6408d9d398980a191e34",
+  "api_id_namespace": "apis.api_id",
+  "canonical_name": "aclnnAdd",
+  "canonical_name_definition": "Official primary non-inplace API symbol.",
+  "expected_output": {
+    "api_id": "e73eb03c3bc1f30f8ca079eaedf484caf318fc7bf2aa6408d9d398980a191e34",
+    "canonical_name": "aclnnAdd",
+    "evidence": [
+      {
+        "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+        "locator": "chars:0:26",
+        "quote": "# aclnnAdd&aclnnInplaceAdd",
+        "source_line": 1
+      },
+      {
+        "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+        "locator": "chars:1230:1251",
+        "quote": "aclnnStatus aclnnAdd(",
+        "source_line": 55
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+      "locator": "chars:0:26",
+      "quote": "# aclnnAdd&aclnnInplaceAdd",
+      "source_line": 1
+    },
+    {
+      "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+      "locator": "chars:1230:1251",
+      "quote": "aclnnStatus aclnnAdd(",
+      "source_line": 55
+    }
+  ],
+  "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+  "source_line": 1,
+  "source_quote": "# aclnnAdd&aclnnInplaceAdd",
+  "raw_source_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+  "asset_content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+  "asset_input_sha256": "47047a14261b8baedce4337162fa1b5a0f0bcfe15a4dc59236f9db01041b9a9b",
+  "related_apis": [
+    {
+      "name": "aclnnInplaceAdd",
+      "api_id": "d53d9c48a5234f96605dd9b0a6c9ed30bd7e31688e7b5957493e64703404c9c1"
+    },
+    {
+      "name": "aclnnAddGetWorkspaceSize",
+      "api_id": "25bb3dec141661ea0830ac90c4443bf5c4ed3631f2a37719fcb7ffd28ff24ce2"
+    },
+    {
+      "name": "aclnnInplaceAddGetWorkspaceSize",
+      "api_id": "081a58d21f669f4bd7dc7a6a7ba8e3a2994119afa55da8de890e528adc4a5db8"
+    }
+  ],
+  "candidate_created_at": "2026-11-24T00:00:00+08:00",
+  "historical_disposition": "The source Oracle and all historical Runs remain immutable. This candidate is inadmissible until Owner approves this exact SHA.",
+  "approved_candidate_sha256": "d160694f0f6d0c5aa3afcb81fb04844cd5e99263a5e2c9e0e05f15a9beab3295",
+  "frozen_at": "2026-11-25T00:00:00+08:00",
+  "wp2": {
+    "envelope_hash": "604a992a774484b8b836fff204f1b02f88bb966eb531c198544d5d0cdaf41668",
+    "mode": "B",
+    "claims_sha256": "1babd77c337e4c6271aa04c62357bc150b891933406cd545b6dc26893a6159c0",
+    "builder": "deterministic"
+  }
+}

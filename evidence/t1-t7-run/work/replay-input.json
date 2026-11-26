@@ -1,0 +1,14 @@
+{
+  "frozen": "private/frozen-official-oracle",
+  "mode": "auto",
+  "task_ids": [
+    "task_44475cfab4a8c25b1c71ce82"
+  ],
+  "te": [
+    {
+      "frozen": "private/frozen-official-oracle",
+      "result_path": "executor/runs/task_44475cfab4a8c25b1c71ce82/run_ec523f2cae2c47468274532811f045a7",
+      "task_id": "task_44475cfab4a8c25b1c71ce82"
+    }
+  ]
+}

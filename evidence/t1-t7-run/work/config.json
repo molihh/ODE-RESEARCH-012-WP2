@@ -1,0 +1,81 @@
+{
+  "approved_grader": {
+    "path": "/Users/chj/Desktop/ode/ODE-PROD-010/GRADER_APPROVED_auto_d06.json",
+    "sha256": "0f420052a35cedb3758896eb0532f90dd4d56f037a1436336a5e877cf60deecd"
+  },
+  "approved_oracle": {
+    "path": "/Users/chj/Desktop/ode/ODE-RESEARCH-012/IMPLEMENTATION/WP2-DSH-002/evidence/wp2-oracle/ORACLE_WP2.json",
+    "sha256": "a79bb36a40e182328a199a1d56954e3e19a3cae362365e8a9e8f3ab78e893281"
+  },
+  "auto_settings": {
+    "required_methods": [
+      "D06"
+    ]
+  },
+  "components": {
+    "ODE-System-Integration": {
+      "git_sha": "5a1073a2503d94945c1e40954fece684082906f8",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "new-evaluator": {
+      "git_sha": "ab1bd43b83f2e2596986821bd68d35e34c0615f4",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "ode-agent": {
+      "git_sha": "177c2b03135892f04b0e4c052640f9960627e7f5",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "ode-local": {
+      "git_sha": "ee4b48ad0399c9d18da419c2fbc6ebcc703ff35b",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "task-executor": {
+      "git_sha": "7222e44b60d736160626a906a54bb6c9c34878ae",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "test-designer": {
+      "git_sha": "a37f9be1b8f98f8c389cf73c13bf8324b2bfb35e",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    }
+  },
+  "core_integration": true,
+  "expert_mode": "baseline",
+  "kb": {
+    "corpus": "/Users/chj/Desktop/ode/ODE-PROD-004-R1/worktrees/ode-agent/data/corpus/cann_operator_api/9.2.0",
+    "database": "/Users/chj/Desktop/ode/ode-local/knowledge_base/cann-9.2.0-v02/index.sqlite3",
+    "index_sha256": "21cc33a64b0d1ea394dda5a011b86cbca13fcf65eee1540470b2ac6fd2543634"
+  },
+  "mode": "auto",
+  "preflight": {
+    "blockers": [],
+    "budget_authorized": false,
+    "endpoint": "https://api.deepseek.com",
+    "fallback": false,
+    "key_available": false,
+    "live_readiness": "BLOCKED_PENDING_BUDGET_AND_CONNECTIVITY",
+    "local_configuration": "PASS",
+    "model": "deepseek-flash",
+    "new_DeepSeek_requests": 0,
+    "remote_connectivity": "NOT_TESTED_NO_MODEL_REQUEST",
+    "retries": 0,
+    "version": "wp3-preflight-1"
+  },
+  "provider": {
+    "fallback": false,
+    "max_retries": 0,
+    "model": "none",
+    "provider": "OFFLINE_ONLY"
+  },
+  "scenario": "positive",
+  "suite_freeze": {
+    "created_at": "2026-11-26T00:00:00+08:00",
+    "suite_id": "suite-aclnnAdd-auto-d01-v2"
+  },
+  "version": "wp3-config-1"
+}

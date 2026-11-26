@@ -11,10 +11,31 @@
   },
   "wp2_001_code_commit": "442092e2ccae3cc90fe04e7d6170977a78747efb",
   "wp2_002_code_commit": "649fe58705b5cbb721b4d6338e74aec063d6e4bf",
-  "tests": {"wp2_001": "12 passed", "wp2_002": "10 passed"},
+  "tests": {
+    "wp2_001": "12 passed",
+    "wp2_002": "10 passed"
+  },
   "runs": 7,
   "provider_calls": 0,
   "network_calls": 0,
-  "wp2_final": "PARTIAL",
-  "real_provider_validation": "NOT_RUN"
+  "wp2_final": "PASS_CANDIDATE",
+  "real_provider_validation": "NOT_RUN",
+  "owner_signoff": "PENDING_DETERMINISTIC_GOLD",
+  "t1_t7_run": "run_ec523f2cae2c47468274532811f045a7",
+  "t1_t7_artifacts": 128,
+  "ev_modes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "D07"
+  ],
+  "regression": {
+    "integration": "691/45",
+    "te": "96/1",
+    "ev": "84+16",
+    "td": "843/17",
+    "ode_local": "53/2",
+    "ode_agent": "148"
+  }
 }

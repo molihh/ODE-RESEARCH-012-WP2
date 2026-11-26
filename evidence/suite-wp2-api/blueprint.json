@@ -1,0 +1,85 @@
+{
+  "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+  "blueprint_id": "bp_wp2_api",
+  "classification": {
+    "confidence": 1.0,
+    "detected_type": "api",
+    "evidence": [
+      "Fixed M1-M8 blueprint recovered from the 2026-10-29 experiment; not a model classification"
+    ],
+    "status": "classified"
+  },
+  "dimension_assessment": [
+    {
+      "applicability": "applicable",
+      "dimension": "discover",
+      "rationale": "Fixed applicability: identity, signature, parameter and provenance evidence are required"
+    },
+    {
+      "applicability": "not_applicable",
+      "dimension": "understand",
+      "rationale": "Outside explicitly selected Fixed method scope"
+    },
+    {
+      "applicability": "not_applicable",
+      "dimension": "apply",
+      "rationale": "Outside explicitly selected Fixed method scope"
+    },
+    {
+      "applicability": "not_applicable",
+      "dimension": "ground_verify",
+      "rationale": "Outside explicitly selected Fixed method scope"
+    }
+  ],
+  "knowledge_structure": [
+    "identity",
+    "signatures",
+    "parameter roles",
+    "constraints and returns",
+    "source provenance"
+  ],
+  "schema_version": "0.1",
+  "status": "frozen",
+  "test_types": [
+    {
+      "capabilities": [
+        "api_identity"
+      ],
+      "dimensions": [
+        "discover"
+      ],
+      "grader": {
+        "type": "structured_match",
+        "version": "0.1",
+        "config": {
+          "required_fields": [
+            "api_id",
+            "canonical_name"
+          ]
+        }
+      },
+      "input_spec": {
+        "format": "structured_task",
+        "required_fields": [
+          "prompt",
+          "scenario",
+          "answer_format"
+        ]
+      },
+      "output_spec": {
+        "format": "structured_answer",
+        "required_fields": [
+          "api_id",
+          "canonical_name"
+        ]
+      },
+      "purpose": "Exact public API identity for auto mode D01",
+      "target_count": 1,
+      "target_difficulty_distribution": {
+        "easy": 1
+      },
+      "test_type_id": "auto_d06"
+    }
+  ],
+  "version": "0.1"
+}

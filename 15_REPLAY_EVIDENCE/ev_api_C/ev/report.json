@@ -1,0 +1,250 @@
+{
+  "coverage": {
+    "asset_type": "api",
+    "calibration": "not_calibrated; target difficulty is not calibrated difficulty",
+    "difficulty_targets": {
+      "easy": 1
+    },
+    "frozen_classification": "api",
+    "graders": [
+      {
+        "purpose": "Pinned Designer field comparison",
+        "type": "structured_match",
+        "version": "0.1"
+      }
+    ],
+    "measured_task_counts": {
+      "apply": 0,
+      "discover": 1,
+      "ground_verify": 0,
+      "understand": 0
+    },
+    "task_types": {
+      "auto_d06": 1
+    },
+    "uncovered_dimensions": [
+      "discover",
+      "understand",
+      "apply",
+      "ground_verify"
+    ]
+  },
+  "diagnostics": [],
+  "dimensions": {
+    "apply": {
+      "checkpoints": [],
+      "denominator_tasks": 0,
+      "run_verdict_counts": {
+        "fail": 0,
+        "invalid": 0,
+        "partial": 0,
+        "pass": 0
+      },
+      "score": null,
+      "task_scores": {},
+      "valid_runs": 0
+    },
+    "discover": {
+      "checkpoints": [],
+      "denominator_tasks": 1,
+      "run_verdict_counts": {
+        "fail": 0,
+        "invalid": 0,
+        "partial": 0,
+        "pass": 1
+      },
+      "score": 1.0,
+      "task_scores": {
+        "task_wp2_api_001": 1.0
+      },
+      "valid_runs": 1
+    },
+    "ground_verify": {
+      "checkpoints": [],
+      "denominator_tasks": 0,
+      "run_verdict_counts": {
+        "fail": 0,
+        "invalid": 0,
+        "partial": 0,
+        "pass": 0
+      },
+      "score": null,
+      "task_scores": {},
+      "valid_runs": 0
+    },
+    "understand": {
+      "checkpoints": [],
+      "denominator_tasks": 0,
+      "run_verdict_counts": {
+        "fail": 0,
+        "invalid": 0,
+        "partial": 0,
+        "pass": 0
+      },
+      "score": null,
+      "task_scores": {},
+      "valid_runs": 0
+    }
+  },
+  "executive_summary": {
+    "invalid_categories": {},
+    "missing_task_ids": [],
+    "runs": 1,
+    "tasks_in_suite": 1,
+    "valid_scoring_runs": 1,
+    "verdict_counts": {
+      "fail": 0,
+      "invalid": 0,
+      "partial": 0,
+      "pass": 1
+    }
+  },
+  "identity": {
+    "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+    "asset_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+    "asset_version": "9.2.0",
+    "generation_time": "unavailable; not recorded, deterministic offline reconstruction",
+    "implementation_code_hashes": {
+      "__init__.py": "89f9b584c524f50c6802317e700c2a8005adfd6588c52a7aaa433d3e1e38cf73",
+      "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+      "cli.py": "d5cbb894c3800b1012f99f74f48c04b59a716dc9333c688584e7e84d8816bc8f",
+      "core.py": "75e6170f4764a44ae4c72b93f097965a988661fd54fb12a981293a9b4c3eb973",
+      "engine.py": "3db25a30cb71440eb39358881affa75e44c9c98b6fb9f49ffba09fd9cc53ae5e",
+      "graders.py": "bc0533c093a0188223e525667a74464c3f41e26f62579d06efd6ab9a43519b38",
+      "measurement.py": "75bfc0c6541854016be82af25a8255457a0e62b335002ba7ba92693eb45399aa",
+      "plan.py": "a934cd593fa2b98249186267af4267d8a345d9051ae5bd489720675531e218c0",
+      "preflight.py": "8437fb133c4999bf9af60e58aa20581cfa35d95dfe68904504ebabce1b68b2c3",
+      "report_data/approved-rules-0.1.0.json": "d273aee125b5034ae74bae03995fb6125641b7298129c8a1a07deefb82ae98cc",
+      "report_data/compatibility.json": "4ee2cf9acf190006827cdb9b29bcd9ebc7ccf80ccc84098ea8d4f1040da2b9f2",
+      "report_metadata.py": "ce3a27745cfe292cdd4891d2236e555dd8f3ab5f353e6fc2718ecfc3a8db58fe",
+      "reporting.py": "1f6e02e6d9891a608164fab74dcde0ec635a3aa5d2bc3dca48ab17000c84fbdb",
+      "schemas/answer.json": "2badffc9b2464f6b95ce8648eeff4bea698d6280e509b3609a9116280eee78fa",
+      "schemas/asset.json": "7801787faacd84b932b1e38d871c62ea3ac4556b435012a4b4d80d0f46726a98",
+      "schemas/blueprint.json": "85495d0a2bda08a2444fe0de8a42bf162350d66db6a7d1b3c3b5f426ba439bcf",
+      "schemas/manifest.json": "32d67d24cfebaff1b0ad99aa0ac58e73d6729fc3a25e6e19a71725ce1c7b6d8d",
+      "schemas/quality.json": "a3039ed04d399f1394c81c223ba8beb9270d3e8c8a24bb86e7136fb9dd4bf5f3",
+      "schemas/result.json": "23527f034bc224e2f2d34154a67ab7254e57720120d1d4b82bc311a7a1db0313",
+      "schemas/review.json": "becb251baf55367f4799e8119609f547cfe5521924800f62e2011219b4b32283",
+      "schemas/task.json": "5fb642f7914f1b4f09288ba3c3dc9d5e0ebbc24cac06806dc2a8f780256808c5",
+      "schemas/trace.json": "3486adf1762771ad254e5d9d0c201b9fba91b8363b1b7d767d44c6b7d4c04323",
+      "suite.py": "aee614abd9e9434ef49f6b566be74f38b77274fe73eb2bdea074733c17f41194"
+    },
+    "implementation_profile": {
+      "status": "draft",
+      "version": "ode-evaluator-0.1.0-draft.1"
+    },
+    "manifest_sha256": "b67a2789cfdf638f24cdce18fd02d960d8d8b23744f57b0b72ee1486179f3aa2",
+    "package_version": "0.1.0.dev1",
+    "provenance_status": "Input/code hashes recorded; output hashes are in provenance.json.",
+    "public_contract": {
+      "status": "Review Draft",
+      "version": "0.1"
+    },
+    "replay_status": "Not asserted by generation; run replay to verify this bundle.",
+    "scoring_rules": {
+      "record": "rules/0.1.0.json",
+      "record_sha256": "d273aee125b5034ae74bae03995fb6125641b7298129c8a1a07deefb82ae98cc",
+      "status": "approved",
+      "version": "0.1.0"
+    },
+    "suite_id": "suite_wp2_api",
+    "suite_version": "0.1"
+  },
+  "limitations": [
+    "No weighted cross-dimension total; four dimensions are not interchangeable.",
+    "Engineering execution validity and measured output performance are distinct.",
+    "null means unmeasured for valid runs; invalid null means no valid score. Missing tasks are not capability failures.",
+    "Valid retries average within each task, then measured tasks average equally; invalid/null excluded.",
+    "No semantic evidence support, causal root attribution, measurement validity, human agreement or difficulty calibration is established.",
+    "Unsigned local provenance supports integrity/recomputation, not adversarial authenticity.",
+    "Human review is needed before modifying assets, test design or execution policy."
+  ],
+  "recommendations": [],
+  "report_version": "ode-report-1.0.0",
+  "reproducibility": {
+    "commands": [
+      "ode-evaluator replay <bundle>",
+      "ode-evaluator report <bundle> <new-report-directory>",
+      "python -m tools.check_summary <bundle>"
+    ],
+    "data_origin": "Offline/fixture-compatible evaluation; no live provider calls are made. Real producer provenance is not verified by this tool.",
+    "independent_recomputation": "Not asserted by generation; run tools.check_summary.",
+    "input_sha256": {
+      "inputs/answer_keys.jsonl": "eaeba5c3ce5a968313258b0aeb0e9b518514bd4acf367975aa7a6599837bba2d",
+      "inputs/asset_input.json": "47047a14261b8baedce4337162fa1b5a0f0bcfe15a4dc59236f9db01041b9a9b",
+      "inputs/blueprint.json": "ebcf956b0692606363cad28535fff0344c8591351f3350e665755d64a25728cc",
+      "inputs/quality_gate_result.json": "49a16828cf5db7ef30a5868326efa249b7e550a9164c05d5884804686862c65d",
+      "inputs/review_results.jsonl": "8cd7882680e15645901cf725894e0e1d42a4aed09f9e77a6a50bffb2b1533840",
+      "inputs/suite_manifest.json": "b67a2789cfdf638f24cdce18fd02d960d8d8b23744f57b0b72ee1486179f3aa2",
+      "inputs/tasks.jsonl": "accbeaa243c08a4eaa6aba617433c066d6b1d0a8c36633270113745785a73c0b",
+      "inputs/traces.jsonl": "860aa6bee23ba3a61f0beff15397eb6d18da58c1a4695f904945c4e31df5f49f"
+    },
+    "output_hash_reference": "provenance.json files map (avoids self-hash cycle)"
+  },
+  "strategy_comparison": {
+    "confounders": [],
+    "groups": [],
+    "message": "本轮无可用策略比较数据",
+    "status": "unavailable"
+  },
+  "tasks": [
+    {
+      "difficulty": {
+        "calibration_status": "not_calibrated",
+        "target_level": "easy"
+      },
+      "measured_dimensions": [
+        "discover"
+      ],
+      "missing": false,
+      "runs": [
+        {
+          "audit_status": "valid",
+          "checkpoint_passed": 1,
+          "checkpoint_total": 1,
+          "checkpoints": [
+            {
+              "dimension": "discover",
+              "grader": {
+                "type": "structured_match",
+                "version": "0.1"
+              },
+              "id": "structured_match:task_wp2_api_001",
+              "passed": true
+            }
+          ],
+          "configured_checkpoint_total": 0,
+          "dimension_scores": {
+            "apply": null,
+            "discover": 1.0,
+            "ground_verify": null,
+            "understand": null
+          },
+          "events": [
+            {
+              "action": "solve",
+              "component": "executor",
+              "seq": 1,
+              "status": "success"
+            }
+          ],
+          "evidence_check": {
+            "required": false,
+            "supported": null
+          },
+          "execution_status": "completed",
+          "failure_reason_code": null,
+          "limitation": "Location checks do not prove semantic support. Raw errors, prompts and answer text are withheld.",
+          "missing_observation": null,
+          "recorded_error_code": null,
+          "recorded_error_present": false,
+          "run_id": "wp2-api-C",
+          "source_locators": [],
+          "verdict": "pass"
+        }
+      ],
+      "task_id": "task_wp2_api_001",
+      "task_type": "auto_d06"
+    }
+  ]
+}

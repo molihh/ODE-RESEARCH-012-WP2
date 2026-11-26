@@ -1,0 +1,1 @@
+{"bytes_sha256":"139b3371e7e756160e4f416fbb6481486376312772ecb4412cd82610d09af294","relative_path":"expert-origin.json","text":"{\n  \"acceptance\": \"BLOCKED\",\n  \"blueprint_impact\": {\n    \"any_actual_change\": false,\n    \"axes\": {},\n    \"reason\": \"No governed Blueprint transformation\",\n    \"status\": \"NOT_APPLIED\"\n  },\n  \"status\": \"NOT_USED\"\n}\n"}

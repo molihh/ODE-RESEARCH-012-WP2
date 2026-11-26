@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "run_id": "run_ec523f2cae2c47468274532811f045a7",
+  "request_id": "run_ec523f2cae2c47468274532811f045a7",
+  "task_id": "task_44475cfab4a8c25b1c71ce82",
+  "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+  "asset_version": "9.2.0",
+  "asset_content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+  "request_uri": "/Users/chj/Desktop/ode/WP2_T1_T7_RUN/work/executor/runs/task_44475cfab4a8c25b1c71ce82/run_ec523f2cae2c47468274532811f045a7/execution-request.json",
+  "request_content_sha256": "2424c319db5b8bdbec6ca754e4b29c189563aacf6be9f5f57775993ac89c2513",
+  "executor_git_sha": "1f4b549208218ac903592249ad6401b62450f8c5",
+  "provider": "mock",
+  "model": "wp3-public-evidence-fixture",
+  "actual_parameters": {
+    "requested": {
+      "schema_version": "0.1",
+      "provider": "mock",
+      "model": "wp3-offline",
+      "temperature": 0.0,
+      "top_k": 3,
+      "max_context_chars": 65536,
+      "max_model_calls": 1,
+      "retain_evidence": true,
+      "thinking": "disabled",
+      "max_tokens": 1024
+    },
+    "provider_sent": {},
+    "asset_access_mode": "full_text",
+    "model_calls_attempted": 1
+  },
+  "response_metadata": {
+    "fixture_only": true,
+    "network_requests": 0
+  },
+  "started_at": "2026-11-26T07:04:44.563954+00:00",
+  "ended_at": "2026-11-26T07:04:44.688090+00:00",
+  "usage": {},
+  "latency_ms": 124.15725000028033,
+  "cost": null,
+  "result_uri": "/Users/chj/Desktop/ode/WP2_T1_T7_RUN/work/executor/runs/task_44475cfab4a8c25b1c71ce82/run_ec523f2cae2c47468274532811f045a7/execution-result.json",
+  "trace_uri": "/Users/chj/Desktop/ode/WP2_T1_T7_RUN/work/executor/runs/task_44475cfab4a8c25b1c71ce82/run_ec523f2cae2c47468274532811f045a7/traces.jsonl"
+}

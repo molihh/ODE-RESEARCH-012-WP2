@@ -1,0 +1,2485 @@
+{
+  "acceptance": {
+    "DSH_independent_reproduction": "PENDING_EXTERNAL_EXECUTOR",
+    "framework_offline_e2e": "PASS",
+    "task18_real_KB_and_real_ERKB": "BLOCKED"
+  },
+  "coverage": {
+    "blueprint_sha256": "dfb49132c8105096d60511fb3a56c4a31e63648b751fcfb081f4b98e25cabc5c",
+    "cells": [
+      {
+        "actual_executed_task_ids": [
+          "task_44475cfab4a8c25b1c71ce82"
+        ],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "discover",
+        "cell_id": "CELL-COMPLETENESS-DISCOVER",
+        "definition": "批准目标总体中具有可追踪登记记录的资产比例。; 登记资产的冻结原文、解析文本和必要结构是否可读。; 固定查询与过滤条件下，目标实体能否经允许入口被 Agent 找到。",
+        "evaluation": {
+          "H01": {
+            "oracle": "人工确认的目标清单与版本边界",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "H02": {
+            "oracle": "冻结原文与人工认可的可读性判据",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "H03": {
+            "oracle": "人工确认的查询到目标实体映射",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "H01": "per_target_presence_record",
+          "H02": "readability_record",
+          "H03": "retrieval_presence_record"
+        },
+        "planned_task_count": 1,
+        "planned_task_types": [
+          "auto_d06"
+        ],
+        "primary_gap": false,
+        "primary_ids": [
+          "H01",
+          "H02",
+          "H03"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Completeness",
+        "score": null,
+        "secondary_annotation_only": [
+          "H05"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "H01": "逐项比对目标清单与 KB manifest/status，并保留逐项状态。",
+          "H02": "核对 fetch/parse/index 状态、原文与文本 hash，并抽查可读片段。",
+          "H03": "锁定索引、查询、过滤和 Agent 检索策略，记录命中及 no-match 分类。"
+        },
+        "uncovered_reasons": [
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "understand",
+        "cell_id": "CELL-COMPLETENESS-UNDERSTAND",
+        "definition": "受测任务所需参数、版本、依赖步骤和限制是否存在于批准公共资产。",
+        "evaluation": {
+          "H05": {
+            "oracle": "人工审核的任务前提清单与来源对应表",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "H05": "prerequisite_coverage_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "H05"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Completeness",
+        "score": null,
+        "secondary_annotation_only": [
+          "H02",
+          "H03"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "H05": "逐项在公共资产中定位前提并记录缺失或冲突。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "apply",
+        "cell_id": "CELL-COMPLETENESS-APPLY",
+        "definition": "No dedicated asset-quality Primary indicator; related Secondary/eligibility must not be counted as a filled cell.",
+        "evaluation": {},
+        "evidence_outputs": {},
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": true,
+        "primary_ids": [],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Completeness",
+        "score": null,
+        "secondary_annotation_only": [
+          "H05"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {},
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "REVIEWED_PRIMARY_GAP",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "ground_verify",
+        "cell_id": "CELL-COMPLETENESS-GROUND-VERIFY",
+        "definition": "No dedicated asset-quality Primary indicator; related Secondary/eligibility must not be counted as a filled cell.",
+        "evaluation": {},
+        "evidence_outputs": {},
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": true,
+        "primary_ids": [],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Completeness",
+        "score": null,
+        "secondary_annotation_only": [],
+        "state": "NOT_MEASURED",
+        "test_methods": {},
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "REVIEWED_PRIMARY_GAP",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [
+          "task_44475cfab4a8c25b1c71ce82"
+        ],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "discover",
+        "cell_id": "CELL-CORRECTNESS-DISCOVER",
+        "definition": "No dedicated asset-quality Primary indicator; related Secondary/eligibility must not be counted as a filled cell.",
+        "evaluation": {},
+        "evidence_outputs": {},
+        "planned_task_count": 1,
+        "planned_task_types": [
+          "auto_d06"
+        ],
+        "primary_gap": true,
+        "primary_ids": [],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Correctness",
+        "score": null,
+        "secondary_annotation_only": [
+          "C01",
+          "C02",
+          "C06"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {},
+        "uncovered_reasons": [
+          "REVIEWED_PRIMARY_GAP",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "understand",
+        "cell_id": "CELL-CORRECTNESS-UNDERSTAND",
+        "definition": "资产实体、签名和适用版本与冻结官方身份表一致。; 参数角色、类型、边界和条件依赖与冻结来源相符。; 资产按来源优先级和版本边界保留冲突、缺失与否定证据。",
+        "evaluation": {
+          "C02": {
+            "oracle": "已审核的官方目录、版本记录和签名快照",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "C03": {
+            "oracle": "官方签名、约束段落和边界样例",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "C06": {
+            "oracle": "批准的来源优先级、版本边界和冲突裁定",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "C02": "identity_version_check",
+          "C03": "constraint_verdict",
+          "C06": "conflict_handling_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "C02",
+          "C03",
+          "C06"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Correctness",
+        "score": null,
+        "secondary_annotation_only": [
+          "C04",
+          "C05"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "C02": "逐项核对名称空间、签名、版本和来源。",
+          "C03": "用合法/非法边界样例与反例逐项核对资产表达。",
+          "C06": "比较资产表述与人工冲突裁定，检查是否捏造不存在结论。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "apply",
+        "cell_id": "CELL-CORRECTNESS-APPLY",
+        "definition": "资产示例或步骤在声明版本与前提下符合规范且可独立复现。",
+        "evaluation": {
+          "C05": {
+            "oracle": "官方行为规范、参考实现或受控结果",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "C05": "example_validation_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "C05"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Correctness",
+        "score": null,
+        "secondary_annotation_only": [
+          "C03"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "C05": "在固定隔离环境执行；不能执行时采用标明证据等级的人工或静态检查。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "ground_verify",
+        "cell_id": "CELL-CORRECTNESS-GROUND-VERIFY",
+        "definition": "资产片段与冻结来源字节、hash、版本和坐标一致。; 关键原子主张与独立来源之间存在可审核的支持、反驳或证据不足关系。",
+        "evaluation": {
+          "C01": {
+            "oracle": "冻结来源原文字节与可信 hash",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "C04": {
+            "oracle": "独立人工来源裁定",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "C01": "source_integrity_record",
+          "C04": "claim_support_verdict"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "C01",
+          "C04"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Correctness",
+        "score": null,
+        "secondary_annotation_only": [
+          "C02",
+          "C03",
+          "C05",
+          "C06"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "C01": "验证 hash、locator 范围、行号和 chunk 绑定。",
+          "C04": "盲审主张和来源，标注 supported/contradicted/insufficient。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [
+          "task_44475cfab4a8c25b1c71ce82"
+        ],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "discover",
+        "cell_id": "CELL-USABILITY-DISCOVER",
+        "definition": "固定上下文预算内，目标结果的排序、去重与相关性是否支持任务。",
+        "evaluation": {
+          "Q01": {
+            "oracle": "独立人工相关性判定",
+            "states": [
+              "OBSERVED",
+              "NEEDS_CALIBRATION",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "UNSET_CALIBRATION_REQUIRED"
+          }
+        },
+        "evidence_outputs": {
+          "Q01": "ranking_utility_record"
+        },
+        "planned_task_count": 1,
+        "planned_task_types": [
+          "auto_d06"
+        ],
+        "primary_gap": false,
+        "primary_ids": [
+          "Q01"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Usability",
+        "score": null,
+        "secondary_annotation_only": [
+          "Q02",
+          "Q04",
+          "Q05"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "Q01": "锁定 Agent、索引与查询，盲评 rank 并报告 recall/MRR 原始值和未裁定比例。"
+        },
+        "uncovered_reasons": [
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "understand",
+        "cell_id": "CELL-USABILITY-UNDERSTAND",
+        "definition": "资产是否帮助固定 Agent 区分相近实体、参数和场景。; 资产是否清楚标示版本、适用范围、废弃和迁移条件。",
+        "evaluation": {
+          "Q02": {
+            "oracle": "审核后的实体差异表与来源片段",
+            "states": [
+              "OBSERVED",
+              "NEEDS_CALIBRATION",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "UNSET_CALIBRATION_REQUIRED"
+          },
+          "Q05": {
+            "oracle": "官方版本/变更日志与批准适用区间",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "Q02": "clarity_disambiguation_record",
+          "Q05": "version_maintenance_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "Q02",
+          "Q05"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Usability",
+        "score": null,
+        "secondary_annotation_only": [
+          "Q01",
+          "Q03",
+          "Q06"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "Q02": "锁定模型、提示、查询和预算，对资产/对照做盲审配对。",
+          "Q05": "比较元数据、原文声明和人工审核版本图。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "apply",
+        "cell_id": "CELL-USABILITY-APPLY",
+        "definition": "固定 Agent、任务、预算与工具时，资产相对对照对有效任务完成的描述性影响。",
+        "evaluation": {
+          "Q03": {
+            "oracle": "隔离私有任务 Oracle 与独立运行记录",
+            "states": [
+              "OBSERVED",
+              "NEEDS_CALIBRATION",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "UNSET_CALIBRATION_REQUIRED"
+          }
+        },
+        "evidence_outputs": {
+          "Q03": "paired_utility_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "Q03"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Usability",
+        "score": null,
+        "secondary_annotation_only": [
+          "Q02"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "Q03": "资产/对照配对、随机顺序，记录成功、无效、成本、时间和引用。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      },
+      {
+        "actual_executed_task_ids": [],
+        "alternative_methods": null,
+        "alternative_status": "NOT_DEFINED_IN_REVIEWED_SOURCE",
+        "capability": "ground_verify",
+        "cell_id": "CELL-USABILITY-GROUND-VERIFY",
+        "definition": "资产片段是否由稳定来源、坐标、版本和指纹形成可独立复核的证据链。; 资产是否暴露未知、冲突、前提未满足和不适用条件，使固定 Agent 能合理拒绝或降级。",
+        "evaluation": {
+          "Q04": {
+            "oracle": "冻结来源字节和审核后的来源身份/版本",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          },
+          "Q06": {
+            "oracle": "人工审核的不足证据/不适用裁定",
+            "states": [
+              "PASS",
+              "FAIL",
+              "UNKNOWN",
+              "BLOCKED"
+            ],
+            "threshold_status": "PER_ITEM_ORACLE_AND_CALLER_STATE_REQUIRED_NO_NEW_AGGREGATE_THRESHOLD"
+          }
+        },
+        "evidence_outputs": {
+          "Q04": "asset_traceability_record",
+          "Q06": "uncertainty_support_record"
+        },
+        "planned_task_count": 0,
+        "planned_task_types": [],
+        "primary_gap": false,
+        "primary_ids": [
+          "Q04",
+          "Q06"
+        ],
+        "primary_measured": [],
+        "primary_planned": [],
+        "quality_attribute": "Usability",
+        "score": null,
+        "secondary_annotation_only": [
+          "Q03",
+          "Q05"
+        ],
+        "state": "NOT_MEASURED",
+        "test_methods": {
+          "Q04": "在隔离副本从 manifest 重建来源、hash、定位和版本。",
+          "Q06": "分开记录资产限制声明和锁定 Agent 的行为，并检查误断言。"
+        },
+        "uncovered_reasons": [
+          "OUTSIDE_DECLARED_TASK_SCOPE",
+          "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+          "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+        ]
+      }
+    ],
+    "dimensions": {
+      "apply": {
+        "executed_task_count": 0,
+        "planned_task_types": []
+      },
+      "discover": {
+        "executed_task_count": 1,
+        "planned_task_types": [
+          "auto_d06"
+        ]
+      },
+      "ground_verify": {
+        "executed_task_count": 0,
+        "planned_task_types": []
+      },
+      "understand": {
+        "executed_task_count": 0,
+        "planned_task_types": []
+      }
+    },
+    "duplicate_task_content_count": 0,
+    "primary_gap_cells": [
+      "CELL-COMPLETENESS-APPLY",
+      "CELL-COMPLETENESS-GROUND-VERIFY",
+      "CELL-CORRECTNESS-DISCOVER"
+    ],
+    "requirements_sha256": "40d83b26602afca07e0438d07f85c3b3b184083df4b0b467121380793ac8e5c3",
+    "task_count": 1,
+    "version": "wp3-coverage-1",
+    "weighted_total": null
+  },
+  "evaluation": {
+    "aggregation": "mean of valid retries per task, then mean across measured tasks; invalid/null excluded",
+    "dimensions": {
+      "apply": {
+        "denominator_tasks": 0,
+        "score": null,
+        "task_scores": {},
+        "valid_runs": 0
+      },
+      "discover": {
+        "denominator_tasks": 1,
+        "score": 0.0,
+        "task_scores": {
+          "task_44475cfab4a8c25b1c71ce82": 0.0
+        },
+        "valid_runs": 1
+      },
+      "ground_verify": {
+        "denominator_tasks": 0,
+        "score": null,
+        "task_scores": {},
+        "valid_runs": 0
+      },
+      "understand": {
+        "denominator_tasks": 0,
+        "score": null,
+        "task_scores": {},
+        "valid_runs": 0
+      }
+    },
+    "invalid_categories": {},
+    "missing_task_ids": [],
+    "profile": "ode-evaluator-0.1.0-draft.1",
+    "rules_status": "approved",
+    "runs": 1,
+    "schema_version": "0.1",
+    "tasks_in_suite": 1,
+    "verdict_counts": {
+      "fail": 1,
+      "invalid": 0,
+      "partial": 0,
+      "pass": 0
+    }
+  },
+  "execution_status": "COMPLETED",
+  "external_erkb": {
+    "acceptance": "BLOCKED",
+    "blueprint_impact": {
+      "any_actual_change": false,
+      "axes": {},
+      "reason": "No governed Blueprint transformation",
+      "status": "NOT_APPLIED"
+    },
+    "status": "NOT_USED"
+  },
+  "model_mode": "OFFLINE_RESPONSES",
+  "network_model_requests": 0,
+  "provenance_sha256": "9ca050ce858d8540d7a94b715d689da91d52f67b48ed0e0c634fbf9ad46cc273",
+  "quality_gate": {
+    "accepted_count": 1,
+    "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+    "coverage": {
+      "apply": {
+        "accepted_count": 0,
+        "target_count": 0
+      },
+      "discover": {
+        "accepted_count": 1,
+        "target_count": 1
+      },
+      "ground_verify": {
+        "accepted_count": 0,
+        "target_count": 0
+      },
+      "understand": {
+        "accepted_count": 0,
+        "target_count": 0
+      }
+    },
+    "issues": [],
+    "needs_review_count": 0,
+    "rejected_count": 0,
+    "schema_version": "0.1",
+    "status": "passed",
+    "suite_id": "suite_cd0753054a935953c790cd2b",
+    "target_count": 1
+  },
+  "run_id": "run_ec523f2cae2c47468274532811f045a7",
+  "scientific_claims": {
+    "T2_live_validity": "NOT_MEASURED",
+    "T3_real_gain": "NOT_MEASURED",
+    "real_model_quality_improvement": "NOT_MEASURED"
+  },
+  "seven_task_integration": {
+    "auto_planning": true,
+    "blueprint_provenance": {
+      "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+      "erkb_bundle_sha256": null,
+      "erkb_commit": null,
+      "final_blueprint": {
+        "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+        "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+        "classification": {
+          "confidence": 1.0,
+          "detected_type": "api",
+          "evidence": [
+            "Official heading with primary API; lexical profile is not semantic source verification"
+          ],
+          "status": "classified"
+        },
+        "dimension_assessment": [
+          {
+            "applicability": "applicable",
+            "dimension": "discover",
+            "rationale": "Supported source-grounded task adapter"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "understand",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "apply",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "ground_verify",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          }
+        ],
+        "knowledge_structure": [
+          "# aclnnAdd&aclnnInplaceAdd"
+        ],
+        "schema_version": "0.1",
+        "status": "draft",
+        "test_types": [
+          {
+            "capabilities": [
+              "证据定位检索"
+            ],
+            "dimensions": [
+              "discover"
+            ],
+            "grader": {
+              "config": {
+                "dimension_fields": {
+                  "discover": [
+                    "api_id",
+                    "canonical_name",
+                    "evidence"
+                  ]
+                },
+                "required_fields": [
+                  "api_id",
+                  "canonical_name",
+                  "evidence"
+                ]
+              },
+              "type": "structured_match"
+            },
+            "input_spec": {
+              "contract_version": "0.2",
+              "format": "structured_task",
+              "json_schema": {
+                "$id": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "properties": {
+                  "answer_format": {
+                    "type": "string"
+                  },
+                  "prompt": {
+                    "type": "string"
+                  },
+                  "scenario": {
+                    "properties": {
+                      "auto_method": {
+                        "const": "D06"
+                      },
+                      "output_field_semantics": {
+                        "const": {
+                          "api_id": {
+                            "namespace": "target_kb.api_id",
+                            "source": "asset.metadata.api_identity"
+                          }
+                        }
+                      },
+                      "target_scope": {
+                        "const": {
+                          "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+                          "content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+                          "version": "9.2.0"
+                        }
+                      }
+                    },
+                    "required": [
+                      "target_scope",
+                      "auto_method",
+                      "output_field_semantics"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "prompt",
+                  "scenario",
+                  "answer_format"
+                ],
+                "type": "object"
+              },
+              "required_fields": [
+                "prompt",
+                "scenario",
+                "answer_format"
+              ],
+              "schema_sha256": "39b21215cc10fb6992750d7ca2d51d5c86dd5532f4089a70d86dd41861f14be9",
+              "schema_uri": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+            },
+            "output_spec": {
+              "contract_version": "0.2",
+              "format": "structured_answer",
+              "json_schema": {
+                "$id": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "additionalProperties": true,
+                "properties": {
+                  "api_id": {
+                    "type": "string"
+                  },
+                  "canonical_name": {
+                    "type": "string"
+                  },
+                  "evidence": {
+                    "minItems": 1,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "api_id",
+                  "canonical_name",
+                  "evidence"
+                ],
+                "type": "object"
+              },
+              "required_fields": [
+                "api_id",
+                "canonical_name",
+                "evidence"
+              ],
+              "schema_sha256": "12c5cadd2dc5ace755ab9efe46ad2d6cb7973d6300cf7736f8a43cd3cf79dac6",
+              "schema_uri": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+            },
+            "purpose": "证据定位检索",
+            "target_count": 1,
+            "target_difficulty_distribution": {
+              "easy": 1
+            },
+            "test_type_id": "auto_d06"
+          }
+        ]
+      },
+      "final_blueprint_sha256": "dfb49132c8105096d60511fb3a56c4a31e63648b751fcfb081f4b98e25cabc5c",
+      "foreign_facts_used_as_Gold": false,
+      "freeze_state": "FROZEN_IMMUTABLE_SNAPSHOT",
+      "indicator_registry_sha256": "d4d52d92283dcb503783981332afe7ff5dc29881163629ccd43e90e89b81bb96",
+      "initial_blueprint": {
+        "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+        "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+        "classification": {
+          "confidence": 1.0,
+          "detected_type": "api",
+          "evidence": [
+            "Official heading with primary API; lexical profile is not semantic source verification"
+          ],
+          "status": "classified"
+        },
+        "dimension_assessment": [
+          {
+            "applicability": "applicable",
+            "dimension": "discover",
+            "rationale": "Supported source-grounded task adapter"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "understand",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "apply",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          },
+          {
+            "applicability": "insufficient_evidence",
+            "dimension": "ground_verify",
+            "rationale": "No approved executable task/Oracle adapter selected; not measured"
+          }
+        ],
+        "knowledge_structure": [
+          "# aclnnAdd&aclnnInplaceAdd"
+        ],
+        "schema_version": "0.1",
+        "status": "draft",
+        "test_types": [
+          {
+            "capabilities": [
+              "证据定位检索"
+            ],
+            "dimensions": [
+              "discover"
+            ],
+            "grader": {
+              "config": {
+                "dimension_fields": {
+                  "discover": [
+                    "api_id",
+                    "canonical_name",
+                    "evidence"
+                  ]
+                },
+                "required_fields": [
+                  "api_id",
+                  "canonical_name",
+                  "evidence"
+                ]
+              },
+              "type": "structured_match"
+            },
+            "input_spec": {
+              "contract_version": "0.2",
+              "format": "structured_task",
+              "json_schema": {
+                "$id": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "properties": {
+                  "answer_format": {
+                    "type": "string"
+                  },
+                  "prompt": {
+                    "type": "string"
+                  },
+                  "scenario": {
+                    "properties": {
+                      "auto_method": {
+                        "const": "D06"
+                      },
+                      "output_field_semantics": {
+                        "const": {
+                          "api_id": {
+                            "namespace": "target_kb.api_id",
+                            "source": "asset.metadata.api_identity"
+                          }
+                        }
+                      },
+                      "target_scope": {
+                        "const": {
+                          "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+                          "content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+                          "version": "9.2.0"
+                        }
+                      }
+                    },
+                    "required": [
+                      "target_scope",
+                      "auto_method",
+                      "output_field_semantics"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "prompt",
+                  "scenario",
+                  "answer_format"
+                ],
+                "type": "object"
+              },
+              "required_fields": [
+                "prompt",
+                "scenario",
+                "answer_format"
+              ],
+              "schema_sha256": "39b21215cc10fb6992750d7ca2d51d5c86dd5532f4089a70d86dd41861f14be9",
+              "schema_uri": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+            },
+            "output_spec": {
+              "contract_version": "0.2",
+              "format": "structured_answer",
+              "json_schema": {
+                "$id": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "additionalProperties": true,
+                "properties": {
+                  "api_id": {
+                    "type": "string"
+                  },
+                  "canonical_name": {
+                    "type": "string"
+                  },
+                  "evidence": {
+                    "minItems": 1,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "api_id",
+                  "canonical_name",
+                  "evidence"
+                ],
+                "type": "object"
+              },
+              "required_fields": [
+                "api_id",
+                "canonical_name",
+                "evidence"
+              ],
+              "schema_sha256": "12c5cadd2dc5ace755ab9efe46ad2d6cb7973d6300cf7736f8a43cd3cf79dac6",
+              "schema_uri": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+            },
+            "purpose": "证据定位检索",
+            "target_count": 1,
+            "target_difficulty_distribution": {
+              "easy": 1
+            },
+            "test_type_id": "auto_d06"
+          }
+        ]
+      },
+      "method_registry_sha256": "5adb5a340f57a8fa8f5f40d4c19835c78dbb8542683baeff27751bde90ffdf3c",
+      "planning_config_hash": "093b764032387865120487505cf2580b060f9642e7d0073e1136bbbc2c8be38d",
+      "planning_model": "deterministic-offline-planner",
+      "planning_prompt_version": "auto-blueprint-evidence-contract/1",
+      "quality_evaluation": [
+        {
+          "assessments": [
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "goal_alignment",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "capability_declared",
+                "observable_output_aligned",
+                "scoring_matches_goal"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "input_sufficiency",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "input_scope_frozen",
+                "prerequisites_present",
+                "identity_definition_public"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "clarity",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "instructions_consistent",
+                "terms_defined",
+                "format_unambiguous"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "uniqueness",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "target_selector_unique",
+                "identity_domain_unique",
+                "allowed_equivalence_defined"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "evidence_sufficiency",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "evidence_available",
+                "locators_verified",
+                "claims_supported"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "contract_clarity",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "required_fields_typed",
+                "public_semantics_defined",
+                "grader_contract_consistent"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "evaluability",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "oracle_independently_frozen",
+                "grader_supported",
+                "controls_and_replay_defined"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            },
+            {
+              "decision": "RECOMMEND_ACCEPT",
+              "evidence_refs": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "indicator_id": "difficulty",
+              "issues": [],
+              "level": 2,
+              "observed_conditions": [
+                "scope_and_budget_declared",
+                "required_steps_supported",
+                "difficulty_claim_evidenced"
+              ],
+              "recommendation": "Proceed only after the existing deterministic gate passes",
+              "uncertainty": {
+                "reason": "",
+                "status": "NONE"
+              }
+            }
+          ],
+          "conflicts": [],
+          "decision": "ACCEPT",
+          "eligible_for_pass_rate": true,
+          "engine_version": "quality-engine-1",
+          "hard_issues": [],
+          "issues": [],
+          "legacy_pass": true,
+          "policy": {
+            "accept_levels": [
+              2,
+              3
+            ],
+            "level_rules": {
+              "0": {
+                "basis": "defect",
+                "decision": "REJECT"
+              },
+              "1": {
+                "basis": "partial",
+                "decision": "REVISE"
+              },
+              "2": {
+                "basis": "all",
+                "decision": "RECOMMEND_ACCEPT"
+              },
+              "3": {
+                "basis": "independent",
+                "decision": "RECOMMEND_ACCEPT"
+              }
+            },
+            "max_revisions": 0,
+            "version": "wp3-explicit-offline-test-profile"
+          },
+          "revision": 0,
+          "source_case_id": null,
+          "status": "VALID_REVIEW",
+          "subject": "52daeda99016c84163bcc0287d83f601fc8be460bfa8c82b6058676abbaf9784"
+        }
+      ],
+      "quality_gate_result": {
+        "accepted_count": 1,
+        "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+        "coverage": {
+          "apply": {
+            "accepted_count": 0,
+            "target_count": 0
+          },
+          "discover": {
+            "accepted_count": 1,
+            "target_count": 1
+          },
+          "ground_verify": {
+            "accepted_count": 0,
+            "target_count": 0
+          },
+          "understand": {
+            "accepted_count": 0,
+            "target_count": 0
+          }
+        },
+        "issues": [],
+        "needs_review_count": 0,
+        "rejected_count": 0,
+        "schema_version": "0.1",
+        "status": "passed",
+        "suite_id": "suite_cd0753054a935953c790cd2b",
+        "target_count": 1
+      },
+      "retrieved_evidence_ids": [],
+      "retrieved_insight_ids": [],
+      "retrieved_knowledge_ids": [],
+      "retrieved_requirement_ids": [],
+      "revision_history": [
+        {
+          "decision": "ACCEPT",
+          "source_record_sha256": "03e77da422a091a2270ebb91070a44be1025ca9c970a8e711a0268197af0bb0a",
+          "subject": "52daeda99016c84163bcc0287d83f601fc8be460bfa8c82b6058676abbaf9784"
+        }
+      ],
+      "run_id": "run_ec523f2cae2c47468274532811f045a7",
+      "selected_indicators": [
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C06",
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06"
+      ],
+      "selected_methods": [
+        "D06"
+      ],
+      "selection_reasons": [
+        "No applicable expert design rule; choose supported exact entity retrieval from official Target input"
+      ],
+      "target_asset": {
+        "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+        "content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+        "version": "9.2.0"
+      }
+    },
+    "coverage_view": {
+      "basic_questions": {
+        "好不好": "Usability",
+        "对不对": "Correctness",
+        "有没有": "Completeness"
+      },
+      "cells": [
+        {
+          "applicable": null,
+          "capability": "discover",
+          "cell_id": "CELL-COMPLETENESS-DISCOVER",
+          "executed_task_ids": [
+            "task_44475cfab4a8c25b1c71ce82"
+          ],
+          "measured": false,
+          "planned_task_types": [
+            "auto_d06"
+          ],
+          "primary_ids": [
+            "H01",
+            "H02",
+            "H03"
+          ],
+          "quality_attribute": "Completeness",
+          "reasons": [
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "understand",
+          "cell_id": "CELL-COMPLETENESS-UNDERSTAND",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "H05"
+          ],
+          "quality_attribute": "Completeness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "apply",
+          "cell_id": "CELL-COMPLETENESS-APPLY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [],
+          "quality_attribute": "Completeness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "REVIEWED_PRIMARY_GAP",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "MISSING_INDICATOR"
+        },
+        {
+          "applicable": null,
+          "capability": "ground_verify",
+          "cell_id": "CELL-COMPLETENESS-GROUND-VERIFY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [],
+          "quality_attribute": "Completeness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "REVIEWED_PRIMARY_GAP",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "MISSING_INDICATOR"
+        },
+        {
+          "applicable": null,
+          "capability": "discover",
+          "cell_id": "CELL-CORRECTNESS-DISCOVER",
+          "executed_task_ids": [
+            "task_44475cfab4a8c25b1c71ce82"
+          ],
+          "measured": false,
+          "planned_task_types": [
+            "auto_d06"
+          ],
+          "primary_ids": [],
+          "quality_attribute": "Correctness",
+          "reasons": [
+            "REVIEWED_PRIMARY_GAP",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "MISSING_INDICATOR"
+        },
+        {
+          "applicable": null,
+          "capability": "understand",
+          "cell_id": "CELL-CORRECTNESS-UNDERSTAND",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "C02",
+            "C03",
+            "C06"
+          ],
+          "quality_attribute": "Correctness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "apply",
+          "cell_id": "CELL-CORRECTNESS-APPLY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "C05"
+          ],
+          "quality_attribute": "Correctness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "ground_verify",
+          "cell_id": "CELL-CORRECTNESS-GROUND-VERIFY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "C01",
+            "C04"
+          ],
+          "quality_attribute": "Correctness",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "discover",
+          "cell_id": "CELL-USABILITY-DISCOVER",
+          "executed_task_ids": [
+            "task_44475cfab4a8c25b1c71ce82"
+          ],
+          "measured": false,
+          "planned_task_types": [
+            "auto_d06"
+          ],
+          "primary_ids": [
+            "Q01"
+          ],
+          "quality_attribute": "Usability",
+          "reasons": [
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "understand",
+          "cell_id": "CELL-USABILITY-UNDERSTAND",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "Q02",
+            "Q05"
+          ],
+          "quality_attribute": "Usability",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "apply",
+          "cell_id": "CELL-USABILITY-APPLY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "Q03"
+          ],
+          "quality_attribute": "Usability",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        },
+        {
+          "applicable": null,
+          "capability": "ground_verify",
+          "cell_id": "CELL-USABILITY-GROUND-VERIFY",
+          "executed_task_ids": [],
+          "measured": false,
+          "planned_task_types": [],
+          "primary_ids": [
+            "Q04",
+            "Q06"
+          ],
+          "quality_attribute": "Usability",
+          "reasons": [
+            "OUTSIDE_DECLARED_TASK_SCOPE",
+            "NO_APPROVED_INDICATOR_TO_TASK_BINDING",
+            "NO_FORMAL_ASSET_CELL_MEASUREMENT"
+          ],
+          "result": null,
+          "status": "NOT_MEASURED"
+        }
+      ],
+      "claim": "Task execution and citation integrity do not activate formal asset-cell measurements",
+      "primary_gaps": [
+        "CELL-COMPLETENESS-APPLY",
+        "CELL-COMPLETENESS-GROUND-VERIFY",
+        "CELL-CORRECTNESS-DISCOVER"
+      ],
+      "selected_indicators": [
+        {
+          "capability_primary": "Discover",
+          "formal_scoring_enabled": false,
+          "indicator_id": "H02",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "有没有",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "状态",
+            "raw/text SHA",
+            "导出片段"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Discover",
+          "formal_scoring_enabled": false,
+          "indicator_id": "H03",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "有没有",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "查询/过滤",
+            "返回 ID/rank",
+            "诊断码",
+            "索引指纹"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Ground & Verify",
+          "formal_scoring_enabled": false,
+          "indicator_id": "H04",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "有没有",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "source URI/version",
+            "locator/quote",
+            "审核状态"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "H05",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "有没有",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "前提 ID",
+            "来源定位",
+            "缺项/冲突"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Ground & Verify",
+          "formal_scoring_enabled": false,
+          "indicator_id": "C01",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "对不对",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "SHA",
+            "source URI",
+            "locator",
+            "excerpt"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "C02",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "对不对",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "API/namespace/signature",
+            "版本",
+            "来源定位"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "C03",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "对不对",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "参数角色",
+            "约束原句",
+            "边界实例",
+            "实际输出"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Ground & Verify",
+          "formal_scoring_enabled": false,
+          "indicator_id": "C04",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "对不对",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "主张 ID",
+            "来源段落",
+            "人工标签"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "C06",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "对不对",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "两侧来源",
+            "冲突点",
+            "诊断",
+            "最终表述"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Discover",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q01",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "原始 rank",
+            "相关性标签",
+            "索引指纹",
+            "分母"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q02",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "选择理由",
+            "差异定位",
+            "跳转次数",
+            "错误类型"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Apply",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q03",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "任务/运行 ID",
+            "输出判定",
+            "无效率",
+            "成本",
+            "引用"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Ground & Verify",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q04",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "文件清单/hash",
+            "source URI",
+            "locator",
+            "excerpt",
+            "版本"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Understand",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q05",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "版本标签",
+            "有效期/废弃声明",
+            "变更定位"
+          ],
+          "value": null,
+          "version": "1.0"
+        },
+        {
+          "capability_primary": "Ground & Verify",
+          "formal_scoring_enabled": false,
+          "indicator_id": "Q06",
+          "measurement_status": "NOT_MEASURED",
+          "quality_question": "好不好",
+          "reason": "Existing ODE design can organize evidence and planning; formal asset scoring is not activated",
+          "required_evidence": [
+            "缺口/冲突标识",
+            "限制原文",
+            "拒绝理由",
+            "误断言数"
+          ],
+          "value": null,
+          "version": "1.0"
+        }
+      ],
+      "version": "seven-task-coverage-view/1",
+      "weighted_total": null
+    },
+    "final_blueprint": {
+      "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+      "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+      "classification": {
+        "confidence": 1.0,
+        "detected_type": "api",
+        "evidence": [
+          "Official heading with primary API; lexical profile is not semantic source verification"
+        ],
+        "status": "classified"
+      },
+      "dimension_assessment": [
+        {
+          "applicability": "applicable",
+          "dimension": "discover",
+          "rationale": "Supported source-grounded task adapter"
+        },
+        {
+          "applicability": "insufficient_evidence",
+          "dimension": "understand",
+          "rationale": "No approved executable task/Oracle adapter selected; not measured"
+        },
+        {
+          "applicability": "insufficient_evidence",
+          "dimension": "apply",
+          "rationale": "No approved executable task/Oracle adapter selected; not measured"
+        },
+        {
+          "applicability": "insufficient_evidence",
+          "dimension": "ground_verify",
+          "rationale": "No approved executable task/Oracle adapter selected; not measured"
+        }
+      ],
+      "knowledge_structure": [
+        "# aclnnAdd&aclnnInplaceAdd"
+      ],
+      "schema_version": "0.1",
+      "status": "draft",
+      "test_types": [
+        {
+          "capabilities": [
+            "证据定位检索"
+          ],
+          "dimensions": [
+            "discover"
+          ],
+          "grader": {
+            "config": {
+              "dimension_fields": {
+                "discover": [
+                  "api_id",
+                  "canonical_name",
+                  "evidence"
+                ]
+              },
+              "required_fields": [
+                "api_id",
+                "canonical_name",
+                "evidence"
+              ]
+            },
+            "type": "structured_match"
+          },
+          "input_spec": {
+            "contract_version": "0.2",
+            "format": "structured_task",
+            "json_schema": {
+              "$id": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "properties": {
+                "answer_format": {
+                  "type": "string"
+                },
+                "prompt": {
+                  "type": "string"
+                },
+                "scenario": {
+                  "properties": {
+                    "auto_method": {
+                      "const": "D06"
+                    },
+                    "output_field_semantics": {
+                      "const": {
+                        "api_id": {
+                          "namespace": "target_kb.api_id",
+                          "source": "asset.metadata.api_identity"
+                        }
+                      }
+                    },
+                    "target_scope": {
+                      "const": {
+                        "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+                        "content_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+                        "version": "9.2.0"
+                      }
+                    }
+                  },
+                  "required": [
+                    "target_scope",
+                    "auto_method",
+                    "output_field_semantics"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "prompt",
+                "scenario",
+                "answer_format"
+              ],
+              "type": "object"
+            },
+            "required_fields": [
+              "prompt",
+              "scenario",
+              "answer_format"
+            ],
+            "schema_sha256": "39b21215cc10fb6992750d7ca2d51d5c86dd5532f4089a70d86dd41861f14be9",
+            "schema_uri": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+          },
+          "output_spec": {
+            "contract_version": "0.2",
+            "format": "structured_answer",
+            "json_schema": {
+              "$id": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407",
+              "$schema": "https://json-schema.org/draft/2020-12/schema",
+              "additionalProperties": true,
+              "properties": {
+                "api_id": {
+                  "type": "string"
+                },
+                "canonical_name": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "minItems": 1,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "api_id",
+                "canonical_name",
+                "evidence"
+              ],
+              "type": "object"
+            },
+            "required_fields": [
+              "api_id",
+              "canonical_name",
+              "evidence"
+            ],
+            "schema_sha256": "12c5cadd2dc5ace755ab9efe46ad2d6cb7973d6300cf7736f8a43cd3cf79dac6",
+            "schema_uri": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+          },
+          "purpose": "证据定位检索",
+          "target_count": 1,
+          "target_difficulty_distribution": {
+            "easy": 1
+          },
+          "test_type_id": "auto_d06"
+        }
+      ]
+    },
+    "final_blueprint_sha256": "dfb49132c8105096d60511fb3a56c4a31e63648b751fcfb081f4b98e25cabc5c",
+    "governance_ref": "core/governance-view.json",
+    "provider_requests": 0,
+    "quality_gate": {
+      "accepted_count": 1,
+      "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+      "coverage": {
+        "apply": {
+          "accepted_count": 0,
+          "target_count": 0
+        },
+        "discover": {
+          "accepted_count": 1,
+          "target_count": 1
+        },
+        "ground_verify": {
+          "accepted_count": 0,
+          "target_count": 0
+        },
+        "understand": {
+          "accepted_count": 0,
+          "target_count": 0
+        }
+      },
+      "issues": [],
+      "needs_review_count": 0,
+      "rejected_count": 0,
+      "schema_version": "0.1",
+      "status": "passed",
+      "suite_id": "suite_cd0753054a935953c790cd2b",
+      "target_count": 1
+    },
+    "real_model_quality_improvement": "NOT_MEASURED",
+    "revision_history": [
+      {
+        "decision": "ACCEPT",
+        "source_record_sha256": "03e77da422a091a2270ebb91070a44be1025ca9c970a8e711a0268197af0bb0a",
+        "subject": "52daeda99016c84163bcc0287d83f601fc8be460bfa8c82b6058676abbaf9784"
+      }
+    ],
+    "run_id": "run_ec523f2cae2c47468274532811f045a7",
+    "selected_methods": [
+      "D06"
+    ],
+    "selection_reasons": [
+      "No applicable expert design rule; choose supported exact entity retrieval from official Target input"
+    ],
+    "trace_ref": "core/trace-view.json",
+    "version": "seven-task-integration/1"
+  },
+  "td_mode": "auto",
+  "version": "wp3-report-1",
+  "wp4_closure": {
+    "attribution_refs": {
+      "task_44475cfab4a8c25b1c71ce82": {
+        "artifact_id": "artifact_ebcb936e4b4c4bcc9c400f022df16a79",
+        "attribution_id": "attribution_d19ebacd879053c7bf2a29e846810376",
+        "record": {
+          "attribution_id": "attribution_d19ebacd879053c7bf2a29e846810376",
+          "attributions": [],
+          "evaluation_verdict_modified": false,
+          "human_review_required": true,
+          "model_calls": 0,
+          "primary_category": "Uncertain",
+          "run_id": "run_ec523f2cae2c47468274532811f045a7",
+          "status": "UNCERTAIN",
+          "task_id": "task_44475cfab4a8c25b1c71ce82",
+          "uncertainty_reason": "no_deterministic_rule",
+          "version": "t4-closure-four-way-2",
+          "view_categories": [
+            "TD",
+            "TE",
+            "KB",
+            "Uncertain"
+          ]
+        }
+      }
+    },
+    "coverage_candidate_views": {
+      "cells": [
+        {
+          "allow_duplicate_primary_counting": false,
+          "business_score": null,
+          "candidate_id": "WP1-T5-COMP-APPLY",
+          "capability": "Apply",
+          "descriptive_ratio": null,
+          "evaluation_object": "approved asset snapshot / independently enumerated observation population",
+          "formal_metric_enabled": false,
+          "formal_primary_changed": false,
+          "items": [],
+          "known_observations": 0,
+          "matching_observations": 0,
+          "method_output": "per_operation_prerequisite_presence",
+          "oracle_reference_sha256": null,
+          "population_approved": false,
+          "population_size": null,
+          "quality_attribute": "Completeness",
+          "reuse_existing_ids": [
+            "H05"
+          ],
+          "standard_freeze_status": "PENDING_CHATGPT",
+          "state": "NOT_MEASURED"
+        },
+        {
+          "allow_duplicate_primary_counting": false,
+          "business_score": null,
+          "candidate_id": "WP1-T5-COMP-GV",
+          "capability": "Ground & Verify",
+          "descriptive_ratio": null,
+          "evaluation_object": "approved asset snapshot / independently enumerated observation population",
+          "formal_metric_enabled": false,
+          "formal_primary_changed": false,
+          "items": [],
+          "known_observations": 0,
+          "matching_observations": 0,
+          "method_output": "per_claim_required_evidence_presence",
+          "oracle_reference_sha256": null,
+          "population_approved": false,
+          "population_size": null,
+          "quality_attribute": "Completeness",
+          "reuse_existing_ids": [
+            "H02",
+            "H05"
+          ],
+          "standard_freeze_status": "PENDING_CHATGPT",
+          "state": "NOT_MEASURED"
+        },
+        {
+          "allow_duplicate_primary_counting": false,
+          "business_score": null,
+          "candidate_id": "WP1-T5-CORR-DISCOVER",
+          "capability": "Discover",
+          "descriptive_ratio": null,
+          "evaluation_object": "approved asset snapshot / independently enumerated observation population",
+          "formal_metric_enabled": false,
+          "formal_primary_changed": false,
+          "items": [],
+          "known_observations": 0,
+          "matching_observations": 0,
+          "method_output": "per_discovered_entity_identity_comparison",
+          "oracle_reference_sha256": null,
+          "population_approved": false,
+          "population_size": null,
+          "quality_attribute": "Correctness",
+          "reuse_existing_ids": [
+            "C02",
+            "C06"
+          ],
+          "standard_freeze_status": "PENDING_CHATGPT",
+          "state": "NOT_MEASURED"
+        }
+      ],
+      "claim_correctness_inferred_from_presence": false,
+      "production_admissible": false,
+      "source_kind": "UNAVAILABLE",
+      "version": "wp4-coverage-candidate-views-1",
+      "weighted_total": null
+    },
+    "formal_standards_changed": false,
+    "lineage_artifact_id": "artifact_308cf5c2926e5c4687a7de3b55f7c953",
+    "real_model_claims": "NOT_MEASURED",
+    "rubric_lineage": [
+      {
+        "eligible_for_pass_rate": true,
+        "formal_gate_effect": false,
+        "legacy_scoring_engine_invocations": 0,
+        "old_rubric_sha256": "59cb6478261b1ef25a411e38ad17eb1c7290378831201a338b1b2adaa2ee8897",
+        "old_rubric_version": "t2-final-rubric-2.0-shadow-implementation-1.0",
+        "parent_metrics": [
+          {
+            "child_evidence_refs": {
+              "clarity": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ]
+            },
+            "child_levels": {
+              "clarity": 2
+            },
+            "name": "Task Clarity",
+            "original_15_checks_independently_measured": false,
+            "original_P2_numeric_state": null,
+            "original_subindicator_ids": [
+              "TC-01",
+              "TC-02",
+              "TC-03"
+            ],
+            "parent_id": "task_clarity",
+            "primary_child_ids": [
+              "clarity"
+            ],
+            "projection_state": "OBSERVED"
+          },
+          {
+            "child_evidence_refs": {
+              "difficulty": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "goal_alignment": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ]
+            },
+            "child_levels": {
+              "difficulty": 2,
+              "goal_alignment": 2
+            },
+            "name": "Asset Alignment",
+            "original_15_checks_independently_measured": false,
+            "original_P2_numeric_state": null,
+            "original_subindicator_ids": [
+              "AR-01",
+              "AR-02",
+              "AR-03"
+            ],
+            "parent_id": "asset_alignment",
+            "primary_child_ids": [
+              "goal_alignment",
+              "difficulty"
+            ],
+            "projection_state": "OBSERVED"
+          },
+          {
+            "child_evidence_refs": {
+              "evaluability": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "input_sufficiency": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ],
+              "uniqueness": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ]
+            },
+            "child_levels": {
+              "evaluability": 2,
+              "input_sufficiency": 2,
+              "uniqueness": 2
+            },
+            "name": "Answerability",
+            "original_15_checks_independently_measured": false,
+            "original_P2_numeric_state": null,
+            "original_subindicator_ids": [
+              "AS-01",
+              "AS-02",
+              "AS-03"
+            ],
+            "parent_id": "answerability",
+            "primary_child_ids": [
+              "input_sufficiency",
+              "uniqueness",
+              "evaluability"
+            ],
+            "projection_state": "OBSERVED"
+          },
+          {
+            "child_evidence_refs": {
+              "evidence_sufficiency": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ]
+            },
+            "child_levels": {
+              "evidence_sufficiency": 2
+            },
+            "name": "Evidence Quality",
+            "original_15_checks_independently_measured": false,
+            "original_P2_numeric_state": null,
+            "original_subindicator_ids": [
+              "ER-01",
+              "ER-02",
+              "ER-03"
+            ],
+            "parent_id": "evidence_quality",
+            "primary_child_ids": [
+              "evidence_sufficiency"
+            ],
+            "projection_state": "OBSERVED"
+          },
+          {
+            "child_evidence_refs": {
+              "contract_clarity": [
+                {
+                  "ref_id": "target",
+                  "sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+                },
+                {
+                  "ref_id": "public",
+                  "sha256": "37d3f3a557ef5384161b3f62eac8b909308c017f40050702ae322be506d82dc1"
+                },
+                {
+                  "ref_id": "private_review",
+                  "sha256": "5dc3d9af953b8ae004b74ece4297800f1044df6da86a957c7deb0c3e7d0ed568"
+                }
+              ]
+            },
+            "child_levels": {
+              "contract_clarity": 2
+            },
+            "name": "Output Contract",
+            "original_15_checks_independently_measured": false,
+            "original_P2_numeric_state": null,
+            "original_subindicator_ids": [
+              "OC-01",
+              "OC-02",
+              "OC-03"
+            ],
+            "parent_id": "output_contract",
+            "primary_child_ids": [
+              "contract_clarity"
+            ],
+            "projection_state": "OBSERVED"
+          }
+        ],
+        "relationship_approval": "RELATIONSHIP_PROPOSAL_PENDING_CHATGPT",
+        "source_engine_status": "VALID_REVIEW",
+        "source_gate_decision": "ACCEPT",
+        "source_record_sha256": "615ed75df44beff63090177a1dedf7384b7e263ec8fcd807cad10d0341bf9f0a",
+        "spec_sha256": "d685fd4f86a6b7f6803209e1f4664c422c6594b5fffed2b122baf616d7b56c5b",
+        "subject": "52daeda99016c84163bcc0287d83f601fc8be460bfa8c82b6058676abbaf9784",
+        "task_id": "task_44475cfab4a8c25b1c71ce82",
+        "version": "wp4-five-eight-parentage-1",
+        "weighted_total": null
+      }
+    ],
+    "run_id": "run_ec523f2cae2c47468274532811f045a7",
+    "version": "wp4-closure-audit-1"
+  }
+}

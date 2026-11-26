@@ -1,0 +1,99 @@
+{
+  "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+  "asset_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+  "blueprint_id": "blueprint_auto_d143941776f9796bd8ed0f2c",
+  "build_status": "passed",
+  "errors": [],
+  "files": {
+    "answer_keys.jsonl": "3ef0c7f03c929219bf2671be28189d932b864e9e265b3b3ae8e78c16f23f3d88",
+    "asset_input.json": "97b0dd63a12421908ecb8edfe735ff6e9e7f539602297bee21e2ca80c6b16e0c",
+    "blueprint.json": "675151b91041836a535748cfbd8d6543ef0b4d09b0bdf08c684c0eac8aaf2a7d",
+    "candidates.jsonl": "583b37d68ea2dde81b43d5970cf937ccff64debb1f7c6ac34a48c83d7e695b36",
+    "quality_gate_result.json": "c85ffb69e79f9d777598ae83bcf9b04b18badbb9e1ed1290f8e3a23d5ff6a161",
+    "review_results.jsonl": "668cc86bc2ea7f5151d5312e34e706608b105790a8b1acb7809754a2d39352c1",
+    "t2.subcriteria-evaluation.json": "da278f6db5d48b061d8b63f7bb58104022c41e65b1862f12dda3730ad1950f80",
+    "tasks.jsonl": "f8911a5077bf2ad24937dd9fa89583a70e2186c86c47c81ad2ae401a857d58e4",
+    "wp2_audit.json": "941cb4b6d0e1376bcffecbf963b6e4a8a3f6ea088ef4f7ce6d7e4b0c8cc29ac9"
+  },
+  "generated_at": "2026-11-26T07:04:44.458025Z",
+  "graders": [
+    {
+      "config": {
+        "dimension_fields": {
+          "discover": [
+            "api_id",
+            "canonical_name",
+            "evidence"
+          ]
+        },
+        "required_fields": [
+          "api_id",
+          "canonical_name",
+          "evidence"
+        ]
+      },
+      "type": "structured_match",
+      "version": "0.1"
+    }
+  ],
+  "provider": {
+    "calls": [
+      "plan",
+      "generate",
+      "review"
+    ],
+    "deterministic_checks_version": "field-roles-1",
+    "generation_config": {
+      "mode": "offline_fixture",
+      "network_requests": 0
+    },
+    "method_mapping": {
+      "reason": "P3A_DEFAULT_NOT_FROZEN",
+      "status": "DISABLED"
+    },
+    "model": "none",
+    "network_requests": 0,
+    "prompt_version": "auto-blueprint-evidence-contract/1",
+    "provider": "computed-auto-offline-responses",
+    "real_model_validity": "NOT_MEASURED",
+    "t2_subcriteria_shadow_version": "1.0",
+    "wp2_workflow_version": "wp2-workflow-1"
+  },
+  "runtime_config": {
+    "classification_threshold": 0.7,
+    "context_tokens": 262144,
+    "duplicate_threshold": 0.9,
+    "grader_profile": "v0.1",
+    "max_calls": 12,
+    "max_candidates": 8,
+    "max_input_chars": 200000,
+    "max_output_tokens": 8192,
+    "operation_output_tokens": {},
+    "thinking": "disabled"
+  },
+  "schema_contracts": {
+    "auto_d06": {
+      "contract_version": "0.2",
+      "dialect": "https://json-schema.org/draft/2020-12/schema",
+      "input": {
+        "resource_hashes": {},
+        "schema_sha256": "39b21215cc10fb6992750d7ca2d51d5c86dd5532f4089a70d86dd41861f14be9",
+        "schema_uri": "urn:ode:auto-input:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+      },
+      "output": {
+        "resource_hashes": {},
+        "schema_sha256": "12c5cadd2dc5ace755ab9efe46ad2d6cb7973d6300cf7736f8a43cd3cf79dac6",
+        "schema_uri": "urn:ode:auto-output:6663b8eba0b5e878415fc3c6e5fd87742f29ff130adcc95585b47c466c986407"
+      },
+      "validator": "python-jsonschema/4.26.0"
+    }
+  },
+  "schema_version": "0.1",
+  "source": {
+    "retrieved_at": "2026-11-26T07:04:44.153529Z",
+    "uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md",
+    "version": "9.2.0"
+  },
+  "suite_id": "suite_cd0753054a935953c790cd2b",
+  "suite_version": "0.1"
+}

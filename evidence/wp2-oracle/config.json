@@ -1,0 +1,91 @@
+{
+  "approved_grader": {
+    "path": "/Users/chj/Desktop/ode/ODE-PROD-010/GRADER_APPROVED_auto_d06.json",
+    "sha256": "0f420052a35cedb3758896eb0532f90dd4d56f037a1436336a5e877cf60deecd"
+  },
+  "approved_oracle": {
+    "path": "/Users/chj/Desktop/ode/ODE-RESEARCH-012/IMPLEMENTATION/WP2-DSH-002/evidence/wp2-oracle/ORACLE_WP2.json",
+    "sha256": "a79bb36a40e182328a199a1d56954e3e19a3cae362365e8a9e8f3ab78e893281"
+  },
+  "auto_settings": {
+    "required_methods": [
+      "D06"
+    ]
+  },
+  "components": {
+    "ODE-System-Integration": {
+      "git_sha": "152b810c2e93bec7ea5be9733486d11b6600ed6a",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "new-evaluator": {
+      "git_sha": "ab1bd43b83f2e2596986821bd68d35e34c0615f4",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "ode-agent": {
+      "git_sha": "177c2b03135892f04b0e4c052640f9960627e7f5",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "ode-local": {
+      "git_sha": "ee4b48ad0399c9d18da419c2fbc6ebcc703ff35b",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "task-executor": {
+      "git_sha": "63982404e31193a101871dc9d6b17a83256280ee",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    },
+    "test-designer": {
+      "git_sha": "01abe476d9266d6f17646f846f7faabca883f172",
+      "version": "wp3-core-integration-1",
+      "worktree_clean": true
+    }
+  },
+  "core_integration": true,
+  "expert_mode": "external",
+  "kb": {
+    "corpus": "/Users/chj/Desktop/ode/ODE-PROD-004-R1/worktrees/ode-agent/data/corpus/cann_operator_api/9.2.0",
+    "database": "/Users/chj/Desktop/ode/ode-local/knowledge_base/cann-9.2.0-v02/index.sqlite3",
+    "index_sha256": "21cc33a64b0d1ea394dda5a011b86cbca13fcf65eee1540470b2ac6fd2543634"
+  },
+  "mode": "auto",
+  "preflight": {
+    "blockers": [],
+    "budget_authorized": false,
+    "endpoint": "https://api.deepseek.com",
+    "fallback": false,
+    "key_available": true,
+    "live_readiness": "BLOCKED_PENDING_BUDGET_AND_CONNECTIVITY",
+    "local_configuration": "PASS",
+    "model": "deepseek-flash",
+    "new_DeepSeek_requests": 0,
+    "remote_connectivity": "NOT_TESTED_NO_MODEL_REQUEST",
+    "retries": 0,
+    "version": "wp3-preflight-1"
+  },
+  "provider": {
+    "endpoint": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "max_retries": 0,
+    "fallback": false,
+    "real_requests_enabled": false
+  },
+  "scenario": "positive",
+  "suite_freeze": {
+    "created_at": "2026-11-26T00:00:00+08:00",
+    "suite_id": "suite-aclnnAdd-auto-d01-v2"
+  },
+  "version": "wp3-config-1",
+  "task_type": "auto_d06",
+  "database": "/Users/chj/Desktop/ode/ode-local/knowledge_base/cann-9.2.0-v02/index.sqlite3",
+  "corpus": "/Users/chj/Desktop/ode/ODE-PROD-004-R1/worktrees/ode-agent/data/corpus/cann_operator_api/9.2.0",
+  "index_sha256": "21cc33a64b0d1ea394dda5a011b86cbca13fcf65eee1540470b2ac6fd2543634",
+  "recovery": null,
+  "core_target": {
+    "document_id": "531700089d39d2560a73db308b593d7ca8702deac97d56b74174828dc214d1f4",
+    "asset_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6"
+  }
+}
