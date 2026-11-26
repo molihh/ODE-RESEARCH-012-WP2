@@ -1,6 +1,6 @@
 # Deterministic KB Gold Review（签收版）
 
-状态：**PASS_DETERMINISTIC，等待 Owner 签收**
+状态：**PASS_DETERMINISTIC，Owner 已签收（2026-11-26）**
 
 ## 1. Gold 到底是什么
 

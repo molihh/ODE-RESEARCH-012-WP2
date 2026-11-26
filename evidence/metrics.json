@@ -16,11 +16,11 @@
     "value": 1.0
   },
   "oracle_correctness": {
-    "numerator": null,
+    "numerator": 7,
     "denominator": 7,
-    "value": null,
-    "status": "NOT_MEASURED",
-    "basis": "no independent human Gold; expected-case matching is not Gold correctness"
+    "value": 1.0,
+    "status": "PASS_DETERMINISTIC",
+    "basis": "deterministic Target KB Gold, Owner accepted 2026-11-26; not human double-blind"
   },
   "evidence_validity": {
     "numerator": 7,
@@ -84,5 +84,6 @@
     "real LLM quality (A/C/D)",
     "human independent Gold",
     "build cost"
-  ]
+  ],
+  "gold_benchmark": "PASS_DETERMINISTIC"
 }

@@ -18,9 +18,9 @@
   "runs": 7,
   "provider_calls": 0,
   "network_calls": 0,
-  "wp2_final": "PASS_CANDIDATE",
+  "wp2_final": "PASS",
   "real_provider_validation": "NOT_RUN",
-  "owner_signoff": "PENDING_DETERMINISTIC_GOLD",
+  "owner_signoff": "ACCEPTED_DETERMINISTIC_KB_GOLD",
   "t1_t7_run": "run_ec523f2cae2c47468274532811f045a7",
   "t1_t7_artifacts": 128,
   "ev_modes": [
@@ -37,5 +37,10 @@
     "td": "843/17",
     "ode_local": "53/2",
     "ode_agent": "148"
-  }
+  },
+  "owner_signoff_date": "2026-11-26",
+  "human_gold": "NOT_RUN",
+  "gold_basis": "deterministic Target KB v02 apis / v03 symbols",
+  "t1_t7_status": "PASS (baseline ERKB injection)",
+  "regression_status": "PASS"
 }

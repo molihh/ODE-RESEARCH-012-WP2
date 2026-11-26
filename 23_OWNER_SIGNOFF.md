@@ -4,7 +4,7 @@ WP2 工程证据已经完成；以下为需要 Owner 人工确认的事项：
 
 ## 必选
 
-- [ ] 接受 **deterministic KB Gold** 作为 Gold Benchmark 依据（不使用人工双盲 Gold）。
+- [x] 接受 **deterministic KB Gold** 作为 Gold Benchmark 依据（不使用人工双盲 Gold）。
   - 依据：`evidence/suite-wp2-api/answer_keys.jsonl`、`benchmark`/Target KB v02 facts、v03 symbols 表。
   - 影响：`GOLD_BENCHMARK=PASS_DETERMINISTIC`，`HUMAN_GOLD=NOT_RUN`。
 
@@ -17,9 +17,9 @@ WP2 工程证据已经完成；以下为需要 Owner 人工确认的事项：
 ## Owner 签字
 
 ```text
-Owner: ____________________
-Date:  ____________________
-Decision: ACCEPT_DETERMINISTIC_KB_GOLD / REJECT
+Owner: User confirmation in this conversation
+Date:  2026-11-26
+Decision: ACCEPT_DETERMINISTIC_KB_GOLD
 ```
 
-签字后，将 `19_FINAL_ACCEPTANCE_MATRIX.md` 的 `WP2_FINAL` 从 `PASS_CANDIDATE` 改为 `PASS`。
+已签收；`WP2_FINAL` 已改为 `PASS`。

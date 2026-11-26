@@ -20,7 +20,7 @@ EV_COMPATIBILITY               = PASS (actual new-evaluator A/B/C/D + D07)
 V02_ORACLE                     = PASS
 V03_D07_ORACLE                 = PASS
 
-GOLD_BENCHMARK                 = PASS_DETERMINISTIC (independent KB Gold; Owner sign-off pending)
+GOLD_BENCHMARK                 = PASS_DETERMINISTIC (Owner accepted)
 QUALITY_METRICS                = PASS (coverage/replay/report; correctness deterministic Gold)
 SECURITY_TESTS                 = PASS (local adversarial + zero network)
 
@@ -36,7 +36,7 @@ WORKTREE_CLEAN                 = PASS
 DELIVERY_INTEGRITY             = PASS
 
 REAL_PROVIDER_VALIDATION       = NOT_RUN
-WP2_FINAL                      = PASS_CANDIDATE (owner Gold sign-off pending)
+WP2_FINAL                      = PASS
 ```
 
-A/B/C/D all passed actual new-evaluator; T1–T7 PASS with injected WP2 Oracle; six-repo regression PASS. The only remaining governance item is Owner acceptance of deterministic KB Gold; real Provider validation remains NOT_RUN by design.
+A/B/C/D all passed actual new-evaluator; T1–T7 PASS with injected WP2 Oracle; six-repo regression PASS. Owner accepted deterministic KB Gold on 2026-11-26. WP2 final is PASS; real Provider validation remains NOT_RUN by design.
