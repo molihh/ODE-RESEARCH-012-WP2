@@ -1,0 +1,11 @@
+# WP2 Oracle Run
+
+- run_id: D07_wrong
+- oracle_id: oracle_D_task_d07_aclnnadd_001
+- oracle_mode: B
+- oracle_hash: d1e2d7aa80d12b41f590e7b68fd830d0505c27217601f1bf1c4cf183f43087fe
+- binding_sha256: 287179e7c631a2817f224baf2eeebe2340028c70b44e0f889ca96e193bfbcde6
+- verdict: FAIL
+- score: 0.3333333333333333
+- provider_calls: 0
+- network_calls: 0

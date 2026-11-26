@@ -1,0 +1,12 @@
+{
+  "matched": [
+    "api_id",
+    "canonical_name"
+  ],
+  "required": [
+    "api_id",
+    "canonical_name"
+  ],
+  "score": 1.0,
+  "verdict": "PASS"
+}

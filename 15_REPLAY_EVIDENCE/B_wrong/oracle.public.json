@@ -1,0 +1,45 @@
+{
+  "asset_id": "47e5ec0b0f4f5d80827aeaebee5a86275a0544cb8a93eeb5ebcc2d66bc8c7549",
+  "asset_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+  "asset_version": "9.2.0",
+  "claims_sha256": "1babd77c337e4c6271aa04c62357bc150b891933406cd545b6dc26893a6159c0",
+  "constraints": [],
+  "construction_strategy": "DETERMINISTIC_RETRIEVAL_RULE",
+  "content_hash": "49cebe0a752972ca3ff46d61b5a242b6d3ccccf4ab41e8bebf9e0c0852d9c6fe",
+  "evidence": [
+    {
+      "evidence_id": "47e5ec0b0f4f:heading:0",
+      "kind": "heading",
+      "locator": "chars:0:10",
+      "quote": "# aclnnAdd",
+      "source_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+      "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md"
+    },
+    {
+      "evidence_id": "47e5ec0b0f4f:prototype:1228",
+      "kind": "prototype",
+      "locator": "chars:1228:1251",
+      "quote": "  aclnnStatus aclnnAdd(",
+      "source_sha256": "8878a5f15e148d363a6a2baa8ae78efaea5e49373c530b0f9b4784979e65f9c6",
+      "source_uri": "https://raw.gitcode.com/cann/ops-math/raw/9.2.0/math/add/docs/aclnnAdd&aclnnInplaceAdd.md"
+    }
+  ],
+  "independence": {
+    "agent_answer_used": false,
+    "ev_verdict_used": false,
+    "grader_used_for_claims": false
+  },
+  "method_id": "D06",
+  "oracle_id": "oracle_B_task_d06_test",
+  "oracle_mode": "B",
+  "oracle_version": "1.0.0",
+  "provenance": {
+    "builder": "deterministic",
+    "extractor": "regex-v1"
+  },
+  "schema_version": "ode.oracle-envelope/1",
+  "status": "VALID",
+  "task_id": "task_d06_test",
+  "task_type": "auto_d06",
+  "validation": {}
+}

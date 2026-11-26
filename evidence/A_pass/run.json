@@ -1,0 +1,21 @@
+{
+  "binding_sha256": "ef50a93f312c721a209c75a613ea6a8b667d25d53f428ec265562e62fcbf28a6",
+  "network_calls": 0,
+  "oracle_hash": "ea1d37adc9566e3c72a6a62403e3823f94723d0eba5a57f4ee953f15bdecc609",
+  "oracle_id": "oracle_A_task_d06_test",
+  "oracle_mode": "A",
+  "provider_calls": 0,
+  "run_id": "A_pass",
+  "verdict": {
+    "matched": [
+      "api_id",
+      "canonical_name"
+    ],
+    "required": [
+      "api_id",
+      "canonical_name"
+    ],
+    "score": 1.0,
+    "verdict": "PASS"
+  }
+}

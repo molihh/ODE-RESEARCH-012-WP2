@@ -1,0 +1,86 @@
+[
+  {
+    "name": "B_pass",
+    "mode": "B",
+    "status": "VALID",
+    "verdict": "PASS",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "49cebe0a752972ca3ff46d61b5a242b6d3ccccf4ab41e8bebf9e0c0852d9c6fe",
+    "binding": "4565bc0e88b3d9059807dfa7f1720dd300ff1ade5ba9554457a3b7d4f4b26836"
+  },
+  {
+    "name": "B_wrong",
+    "mode": "B",
+    "status": "VALID",
+    "verdict": "FAIL",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "49cebe0a752972ca3ff46d61b5a242b6d3ccccf4ab41e8bebf9e0c0852d9c6fe",
+    "binding": "6e55bfed52740c5d063b97bdadfeca35ed04a1c527e4aad7daed1bc015d469ad"
+  },
+  {
+    "name": "A_pass",
+    "mode": "A",
+    "status": "VALID",
+    "verdict": "PASS",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "ea1d37adc9566e3c72a6a62403e3823f94723d0eba5a57f4ee953f15bdecc609",
+    "binding": "ef50a93f312c721a209c75a613ea6a8b667d25d53f428ec265562e62fcbf28a6"
+  },
+  {
+    "name": "C_pass",
+    "mode": "C",
+    "status": "VALID",
+    "verdict": "PASS",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "6b660178fd8eff62319b9b1fa413ab1445c85febcaf1c94ecec6a52191226334",
+    "binding": "e877c3a8bf543f38eeabd22ad8c60ca9ae2f6b1168377df8226f9172a2b61869"
+  },
+  {
+    "name": "D_pass",
+    "mode": "D",
+    "status": "VALID",
+    "verdict": "PASS",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "cdca46a315da9984aa8dfa2c1e44c22b49b27b094e9500159613d404ef606b5f",
+    "binding": "9de9e5eedc8b6b554e130f2c6ac0e378ef794bedb2cad6a49dab7f8eea8234f8"
+  },
+  {
+    "name": "D07_pass",
+    "mode": "B",
+    "status": "VALID",
+    "verdict": "PASS",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "d1e2d7aa80d12b41f590e7b68fd830d0505c27217601f1bf1c4cf183f43087fe",
+    "binding": "f2f787aec798ab423cfcc38ed3686ee750c7e0c7b0bbe08c9b05510844fa1f44"
+  },
+  {
+    "name": "D07_wrong",
+    "mode": "B",
+    "status": "VALID",
+    "verdict": "FAIL",
+    "replay": true,
+    "report_identical": true,
+    "provider_calls": 0,
+    "network_calls": 0,
+    "oracle_hash": "d1e2d7aa80d12b41f590e7b68fd830d0505c27217601f1bf1c4cf183f43087fe",
+    "binding": "287179e7c631a2817f224baf2eeebe2340028c70b44e0f889ca96e193bfbcde6"
+  }
+]

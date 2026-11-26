@@ -1,0 +1,13 @@
+{
+  "runs": 7,
+  "pass": 5,
+  "fail": 2,
+  "replay_all": true,
+  "report_all": true,
+  "provider_calls": 0,
+  "security": {
+    "payload_private_claims": true,
+    "guard_rejects_agent": true,
+    "guard_rejects_ev": true
+  }
+}

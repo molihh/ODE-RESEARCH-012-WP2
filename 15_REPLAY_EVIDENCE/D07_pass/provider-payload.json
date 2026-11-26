@@ -1,0 +1,56 @@
+{
+  "asset_sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea",
+  "evidence": [
+    {
+      "evidence_id": "7a9ca859fd90:symbol:60",
+      "kind": "symbol",
+      "locator": "line:60",
+      "quote": "[L60] ACLNN_API aclnnStatus aclnnAdd(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);",
+      "source_sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea",
+      "source_uri": "git://https://gitcode.com/cann/ops-math.git@5d4daae8a7b21d87f9a2c6e11cb0d62ac0085b53/math/add/op_api/aclnn_add.h"
+    }
+  ],
+  "oracle_public": {
+    "asset_id": "fd807dc4fc419264dcc123dbb0e9f9aa7e20929c269c7a4051b08a8bffcb2c8c",
+    "asset_sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea",
+    "asset_version": "9.2.0",
+    "claims_sha256": "2fb593d8e5baf49fe7950d773970ce05505640d49fd354e46c88d6cbcf243aec",
+    "constraints": [],
+    "construction_strategy": "DETERMINISTIC_SYMBOL_INDEX",
+    "content_hash": "d1e2d7aa80d12b41f590e7b68fd830d0505c27217601f1bf1c4cf183f43087fe",
+    "evidence": [
+      {
+        "evidence_id": "7a9ca859fd90:symbol:60",
+        "kind": "symbol",
+        "locator": "line:60",
+        "quote": "[L60] ACLNN_API aclnnStatus aclnnAdd(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);",
+        "source_sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea",
+        "source_uri": "git://https://gitcode.com/cann/ops-math.git@5d4daae8a7b21d87f9a2c6e11cb0d62ac0085b53/math/add/op_api/aclnn_add.h"
+      }
+    ],
+    "independence": {
+      "agent_answer_used": false,
+      "ev_verdict_used": false,
+      "grader_used_for_claims": false
+    },
+    "method_id": "D07",
+    "oracle_id": "oracle_D_task_d07_aclnnadd_001",
+    "oracle_mode": "B",
+    "oracle_version": "1.0.0",
+    "provenance": {
+      "builder": "v03-symbol-index",
+      "kb_dir": "/Users/chj/Desktop/ode/ode-local/knowledge_base/cann-9.2.0-v03-engineering",
+      "source": "Target KB v03"
+    },
+    "schema_version": "ode.oracle-envelope/1",
+    "status": "VALID",
+    "task_id": "task_d07_aclnnadd_001",
+    "task_type": "auto_d07",
+    "validation": {}
+  },
+  "task": {
+    "method_id": "D07",
+    "task_id": "task_d07_aclnnadd_001",
+    "task_type": "auto_d07"
+  }
+}

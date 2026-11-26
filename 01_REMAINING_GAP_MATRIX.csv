@@ -1,0 +1,13 @@
+gap,status_after_002,evidence
+runtime_independence,PARTIAL,runtime guard + payload test; no production T1-T7 injection
+evaluation_binding,PASS,freeze_binding/verify_frozen_binding + tamper test
+te_oracle_isolation,PASS,public payload + forbidden-key test
+ev_compatibility,PARTIAL,local structured evaluator; existing new-evaluator grader not wired
+v03_d07_oracle,PASS,symbol/path/line build from v03 index
+gold_benchmark,PARTIAL,7 local cases; no independent human Gold
+quality_metrics,PARTIAL,computed; correctness NOT_MEASURED
+security_tests,PARTIAL,guards/tamper/injection key tests; prompt injection not run
+offline_replay,PASS,7/7 replay identical provider_calls=0
+report_rebuild,PASS,7/7 byte identical
+t1_t7_integration,PARTIAL,local closure only; full run_integrated not used
+real_provider_validation,NOT_RUN,no authorization

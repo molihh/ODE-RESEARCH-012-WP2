@@ -1,0 +1,88 @@
+{
+  "schema_version": "wp2.metrics/1",
+  "sample": {
+    "runs": 7,
+    "modes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source": "WP2-DSH-002 local runtime, Fake LLM for A/C/D"
+  },
+  "oracle_coverage": {
+    "numerator": 7,
+    "denominator": 7,
+    "value": 1.0
+  },
+  "oracle_correctness": {
+    "numerator": null,
+    "denominator": 7,
+    "value": null,
+    "status": "NOT_MEASURED",
+    "basis": "no independent human Gold; expected-case matching is not Gold correctness"
+  },
+  "evidence_validity": {
+    "numerator": 7,
+    "denominator": 7,
+    "value": 1.0
+  },
+  "evidence_completeness": {
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1.0,
+    "basis": "all VALID envelopes have at least one evidence"
+  },
+  "independence_compliance": {
+    "numerator": 3,
+    "denominator": 3,
+    "value": 1.0,
+    "basis": {
+      "payload_private_claims": true,
+      "guard_rejects_agent": true,
+      "guard_rejects_ev": true
+    }
+  },
+  "path_agreement": {
+    "numerator": 1,
+    "denominator": 1,
+    "value": 1.0,
+    "basis": "D agreement case only"
+  },
+  "conflict_rate": {
+    "numerator": 0,
+    "denominator": 7,
+    "value": 0.0
+  },
+  "invalid_rate": {
+    "numerator": 0,
+    "denominator": 7,
+    "value": 0.0
+  },
+  "reproducibility": {
+    "numerator": 7,
+    "denominator": 7,
+    "value": 1.0
+  },
+  "build_latency_ms": {
+    "value": null,
+    "status": "NOT_MEASURED"
+  },
+  "build_cost_usd": {
+    "value": null,
+    "status": "NOT_MEASURED",
+    "reason": "no real provider"
+  },
+  "report_rebuild": {
+    "numerator": 7,
+    "denominator": 7,
+    "value": 1.0
+  },
+  "provider_calls": 0,
+  "network_calls": 0,
+  "not_measured": [
+    "real LLM quality (A/C/D)",
+    "human independent Gold",
+    "build cost"
+  ]
+}

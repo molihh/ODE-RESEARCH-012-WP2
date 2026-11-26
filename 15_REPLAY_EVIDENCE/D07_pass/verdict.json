@@ -1,0 +1,14 @@
+{
+  "matched": [
+    "line",
+    "path",
+    "symbol"
+  ],
+  "required": [
+    "line",
+    "path",
+    "symbol"
+  ],
+  "score": 1.0,
+  "verdict": "PASS"
+}

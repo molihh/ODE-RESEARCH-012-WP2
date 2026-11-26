@@ -1,0 +1,14 @@
+{
+  "matched": [
+    "api_id",
+    "canonical_name",
+    "function_signature"
+  ],
+  "required": [
+    "api_id",
+    "canonical_name",
+    "function_signature"
+  ],
+  "score": 1.0,
+  "verdict": "PASS"
+}
