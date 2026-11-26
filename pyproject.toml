@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ode-wp2-runtime"
+version = "1.0.0"
+description = "ODE-RESEARCH-012 WP2 four-mode Oracle runtime"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.20", "httpx>=0.27"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
