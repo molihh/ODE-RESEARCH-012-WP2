@@ -50,7 +50,7 @@ Replay: Not asserted by generation; run replay to verify this bundle.
     &quot;status&quot;: &quot;draft&quot;,
     &quot;version&quot;: &quot;ode-evaluator-0.1.0-draft.1&quot;
   },
-  &quot;manifest_sha256&quot;: &quot;b67a2789cfdf638f24cdce18fd02d960d8d8b23744f57b0b72ee1486179f3aa2&quot;,
+  &quot;manifest_sha256&quot;: &quot;69c530b6c33bf1be6a94dd115a458447862ff5d5d7831d985b107cfdb93a3e10&quot;,
   &quot;package_version&quot;: &quot;0.1.0.dev1&quot;,
   &quot;provenance_status&quot;: &quot;Input/code hashes recorded; output hashes are in provenance.json.&quot;,
   &quot;public_contract&quot;: {
@@ -221,9 +221,9 @@ Location checks do not prove semantic support. Raw errors, prompts and answer te
     &quot;inputs/blueprint.json&quot;: &quot;ebcf956b0692606363cad28535fff0344c8591351f3350e665755d64a25728cc&quot;,
     &quot;inputs/quality_gate_result.json&quot;: &quot;49a16828cf5db7ef30a5868326efa249b7e550a9164c05d5884804686862c65d&quot;,
     &quot;inputs/review_results.jsonl&quot;: &quot;8cd7882680e15645901cf725894e0e1d42a4aed09f9e77a6a50bffb2b1533840&quot;,
-    &quot;inputs/suite_manifest.json&quot;: &quot;b67a2789cfdf638f24cdce18fd02d960d8d8b23744f57b0b72ee1486179f3aa2&quot;,
-    &quot;inputs/tasks.jsonl&quot;: &quot;accbeaa243c08a4eaa6aba617433c066d6b1d0a8c36633270113745785a73c0b&quot;,
-    &quot;inputs/traces.jsonl&quot;: &quot;1fe4b03985fcbcf301f777129a564100eb0fcc2b1e98d14e6b25e0fb87afdd89&quot;
+    &quot;inputs/suite_manifest.json&quot;: &quot;69c530b6c33bf1be6a94dd115a458447862ff5d5d7831d985b107cfdb93a3e10&quot;,
+    &quot;inputs/tasks.jsonl&quot;: &quot;a074503cbdbd09e5a1de31dc738a67fd95379e9962bf59bcc329a28a599af66c&quot;,
+    &quot;inputs/traces.jsonl&quot;: &quot;c7f073d878c831aa6e0103dace376ed1987f66b2893332f3c983e70e9dd6c661&quot;
   },
   &quot;output_hash_reference&quot;: &quot;provenance.json files map (avoids self-hash cycle)&quot;
 }

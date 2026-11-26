@@ -33,11 +33,11 @@
     "inputs/blueprint.json": "ebcf956b0692606363cad28535fff0344c8591351f3350e665755d64a25728cc",
     "inputs/quality_gate_result.json": "49a16828cf5db7ef30a5868326efa249b7e550a9164c05d5884804686862c65d",
     "inputs/review_results.jsonl": "8cd7882680e15645901cf725894e0e1d42a4aed09f9e77a6a50bffb2b1533840",
-    "inputs/suite_manifest.json": "b67a2789cfdf638f24cdce18fd02d960d8d8b23744f57b0b72ee1486179f3aa2",
-    "inputs/tasks.jsonl": "accbeaa243c08a4eaa6aba617433c066d6b1d0a8c36633270113745785a73c0b",
-    "inputs/traces.jsonl": "c3dfa593e1e3f9019bc536bdf20f044893b11640fb2a694ffc509df835f59bdf",
-    "report.json": "6238e045d3becb8928e2dabf3b2fb2011e05c5d5cd1345c10cabff7eeb45d398",
-    "report.md": "c99dfd51b68607ed0e6c2a12fce7e23dc2b68f440984fa96c3fc1022de2956f2"
+    "inputs/suite_manifest.json": "69c530b6c33bf1be6a94dd115a458447862ff5d5d7831d985b107cfdb93a3e10",
+    "inputs/tasks.jsonl": "a074503cbdbd09e5a1de31dc738a67fd95379e9962bf59bcc329a28a599af66c",
+    "inputs/traces.jsonl": "5be7ffdd6fb48a0439d007929894da980050e8655a73024803d54f72b78bf3b1",
+    "report.json": "85e5d2e1f8d0f9aaff5565f37238fd2a28be4deb1b67f4f4a5f6e2d340d888dd",
+    "report.md": "c4034a467301040e205db0db05dfd5efd14a6371811f2afc39048550abb46609"
   },
   "limitations": [
     "Local unsigned integrity record; not an adversarial authenticity proof.",
