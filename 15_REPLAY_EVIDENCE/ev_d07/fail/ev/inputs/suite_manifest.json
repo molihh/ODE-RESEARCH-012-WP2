@@ -1,0 +1,49 @@
+{
+  "schema_version": "0.1",
+  "suite_id": "suite_v03_symbol",
+  "suite_version": "0.1",
+  "profile": "ode-evaluator-0.1.0-draft.1",
+  "asset": {
+    "asset_id": "fd807dc4fc419264dcc123dbb0e9f9aa7e20929c269c7a4051b08a8bffcb2c8c",
+    "sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea",
+    "source_uri": "git://https://gitcode.com/cann/ops-math.git@5d4daae8a7b21d87f9a2c6e11cb0d62ac0085b53/math/add/op_api/aclnn_add.h",
+    "source_version": "9.2.0"
+  },
+  "blueprint_id": "bp_d07_symbol",
+  "blueprint_version": "0.1",
+  "created_at": "2026-11-24T00:00:00.000000Z",
+  "designer": {
+    "model": "deepseek-flash",
+    "prompt_version": "td-prompt/3.0",
+    "generation_config": {
+      "max_output_tokens": 8192,
+      "temperature": 0
+    },
+    "limitations": [
+      "D07 anchored on the frozen symbols index."
+    ]
+  },
+  "quality_gate_status": "passed",
+  "files": {
+    "answer_keys.jsonl": "7296a83f135acff3ba48dfab67619d9f3af8214fd0eaebd9871ffc6916fe7496",
+    "asset_input.json": "5fa434373bbd2debf975803fb8d4f4788ac0e2b1795320e3d4ea775c1e049884",
+    "blueprint.json": "8f4ce844c0aa046d73c2346afd93e34ed30d1a0fa90fd7b500127ff1d97af5bb",
+    "quality_gate_result.json": "c22292417eaa31b40f8f779e79eccbe6a2732c47f810efa6af1862e9ecaf682d",
+    "review_results.jsonl": "ed94e462b1d1a5eddb093bf5e33dc38d29725503bf28369eaa49b85bd9311313",
+    "tasks.jsonl": "06a7d440e650cd5932ed2e086f5af1f52709f2ed0569c5acebb11d5d04d0ce7a"
+  },
+  "graders": [
+    {
+      "type": "structured_match",
+      "version": "0.1"
+    }
+  ],
+  "runtime_config": {
+    "dimension_aggregation": "all",
+    "task_type_graders": {
+      "auto_d07": [
+        "structured_match"
+      ]
+    }
+  }
+}

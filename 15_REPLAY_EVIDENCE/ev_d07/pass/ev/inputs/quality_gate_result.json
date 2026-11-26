@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1",
+  "suite_id": "suite_v03_symbol",
+  "blueprint_id": "bp_d07_symbol",
+  "status": "passed",
+  "accepted_count": 1,
+  "target_count": 1,
+  "rejected_count": 0,
+  "needs_review_count": 0,
+  "issues": [],
+  "coverage": {
+    "discover": {
+      "accepted_count": 0,
+      "target_count": 0
+    },
+    "understand": {
+      "accepted_count": 0,
+      "target_count": 0
+    },
+    "apply": {
+      "accepted_count": 0,
+      "target_count": 0
+    },
+    "ground_verify": {
+      "accepted_count": 1,
+      "target_count": 1
+    }
+  }
+}

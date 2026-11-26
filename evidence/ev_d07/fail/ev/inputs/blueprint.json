@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1",
+  "blueprint_id": "bp_d07_symbol",
+  "asset_id": "fd807dc4fc419264dcc123dbb0e9f9aa7e20929c269c7a4051b08a8bffcb2c8c",
+  "status": "frozen",
+  "classification": {
+    "status": "classified",
+    "detected_type": "engineering_evidence",
+    "confidence": 1.0,
+    "evidence": [
+      "symbols table row for aclnnAdd"
+    ]
+  },
+  "knowledge_structure": [
+    "engineering index document",
+    "symbol:aclnnAdd",
+    "path:math/add/op_api/aclnn_add.h",
+    "line:60"
+  ],
+  "dimension_assessment": [
+    {
+      "dimension": "discover",
+      "applicability": "not_applicable",
+      "rationale": "not measured by D07"
+    },
+    {
+      "dimension": "understand",
+      "applicability": "not_applicable",
+      "rationale": "not measured by D07"
+    },
+    {
+      "dimension": "apply",
+      "applicability": "not_applicable",
+      "rationale": "not measured by D07"
+    },
+    {
+      "dimension": "ground_verify",
+      "applicability": "applicable",
+      "rationale": "D07 measures symbol location"
+    }
+  ],
+  "test_types": [
+    {
+      "test_type_id": "auto_d07",
+      "purpose": "Symbol existence and location",
+      "dimensions": [
+        "ground_verify"
+      ],
+      "capabilities": [
+        "symbol_existence"
+      ],
+      "target_count": 1,
+      "target_difficulty_distribution": {
+        "easy": 1
+      },
+      "input_spec": {
+        "format": "structured_task",
+        "required_fields": [
+          "prompt",
+          "scenario",
+          "answer_format"
+        ]
+      },
+      "output_spec": {
+        "format": "structured_answer",
+        "required_fields": [
+          "symbol",
+          "path",
+          "line"
+        ]
+      },
+      "grader": {
+        "type": "structured_match",
+        "version": "0.1",
+        "config": {
+          "required_fields": [
+            "symbol",
+            "path",
+            "line"
+          ]
+        }
+      }
+    }
+  ]
+}

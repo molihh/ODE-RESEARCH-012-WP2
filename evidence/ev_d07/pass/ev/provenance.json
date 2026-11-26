@@ -1,0 +1,50 @@
+{
+  "code_hashes": {
+    "__init__.py": "89f9b584c524f50c6802317e700c2a8005adfd6588c52a7aaa433d3e1e38cf73",
+    "__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "cli.py": "d5cbb894c3800b1012f99f74f48c04b59a716dc9333c688584e7e84d8816bc8f",
+    "core.py": "75e6170f4764a44ae4c72b93f097965a988661fd54fb12a981293a9b4c3eb973",
+    "engine.py": "3db25a30cb71440eb39358881affa75e44c9c98b6fb9f49ffba09fd9cc53ae5e",
+    "graders.py": "bc0533c093a0188223e525667a74464c3f41e26f62579d06efd6ab9a43519b38",
+    "measurement.py": "75bfc0c6541854016be82af25a8255457a0e62b335002ba7ba92693eb45399aa",
+    "plan.py": "a934cd593fa2b98249186267af4267d8a345d9051ae5bd489720675531e218c0",
+    "preflight.py": "8437fb133c4999bf9af60e58aa20581cfa35d95dfe68904504ebabce1b68b2c3",
+    "report_data/approved-rules-0.1.0.json": "d273aee125b5034ae74bae03995fb6125641b7298129c8a1a07deefb82ae98cc",
+    "report_data/compatibility.json": "4ee2cf9acf190006827cdb9b29bcd9ebc7ccf80ccc84098ea8d4f1040da2b9f2",
+    "report_metadata.py": "ce3a27745cfe292cdd4891d2236e555dd8f3ab5f353e6fc2718ecfc3a8db58fe",
+    "reporting.py": "1f6e02e6d9891a608164fab74dcde0ec635a3aa5d2bc3dca48ab17000c84fbdb",
+    "schemas/answer.json": "2badffc9b2464f6b95ce8648eeff4bea698d6280e509b3609a9116280eee78fa",
+    "schemas/asset.json": "7801787faacd84b932b1e38d871c62ea3ac4556b435012a4b4d80d0f46726a98",
+    "schemas/blueprint.json": "85495d0a2bda08a2444fe0de8a42bf162350d66db6a7d1b3c3b5f426ba439bcf",
+    "schemas/manifest.json": "32d67d24cfebaff1b0ad99aa0ac58e73d6729fc3a25e6e19a71725ce1c7b6d8d",
+    "schemas/quality.json": "a3039ed04d399f1394c81c223ba8beb9270d3e8c8a24bb86e7136fb9dd4bf5f3",
+    "schemas/result.json": "23527f034bc224e2f2d34154a67ab7254e57720120d1d4b82bc311a7a1db0313",
+    "schemas/review.json": "becb251baf55367f4799e8119609f547cfe5521924800f62e2011219b4b32283",
+    "schemas/task.json": "5fb642f7914f1b4f09288ba3c3dc9d5e0ebbc24cac06806dc2a8f780256808c5",
+    "schemas/trace.json": "3486adf1762771ad254e5d9d0c201b9fba91b8363b1b7d767d44c6b7d4c04323",
+    "suite.py": "aee614abd9e9434ef49f6b566be74f38b77274fe73eb2bdea074733c17f41194"
+  },
+  "files": {
+    "audit.jsonl": "1177aea7f2f849dafff0063c5e51d4722e51c5fca9af93d29c1350ec14885d03",
+    "evaluation_results.jsonl": "c7a522c71d81871014d7cf73a8fc25acffc0d988e6ce3c31689b8a2a30981ebc",
+    "evaluation_summary.json": "bb4df6644c02044dd5977ccd26f655f97c8e0fe3885853ed9189e373e21b270a",
+    "inputs/answer_keys.jsonl": "7296a83f135acff3ba48dfab67619d9f3af8214fd0eaebd9871ffc6916fe7496",
+    "inputs/asset_input.json": "5fa434373bbd2debf975803fb8d4f4788ac0e2b1795320e3d4ea775c1e049884",
+    "inputs/blueprint.json": "8f4ce844c0aa046d73c2346afd93e34ed30d1a0fa90fd7b500127ff1d97af5bb",
+    "inputs/quality_gate_result.json": "c22292417eaa31b40f8f779e79eccbe6a2732c47f810efa6af1862e9ecaf682d",
+    "inputs/review_results.jsonl": "ed94e462b1d1a5eddb093bf5e33dc38d29725503bf28369eaa49b85bd9311313",
+    "inputs/suite_manifest.json": "24dcdc1cde71340bcac31f30ae12aeb2492a777ffadd608eb14fb0080ff402c3",
+    "inputs/tasks.jsonl": "06a7d440e650cd5932ed2e086f5af1f52709f2ed0569c5acebb11d5d04d0ce7a",
+    "inputs/traces.jsonl": "21b6aa0c0074cf3466ac3dc5db77f994fd71fb887a740c348e1e3663af536b98",
+    "report.json": "a7da04b76971100b730f9e58ce730123c2263f8ba8afeed3dd165cfbcfc3b2aa",
+    "report.md": "4f9f99b94ff558c09b6daa2a1a44e015b921aee8105df699dccb9f3941ee3817"
+  },
+  "limitations": [
+    "Local unsigned integrity record; not an adversarial authenticity proof.",
+    "Synthetic runs are not real Designer/Executor integration."
+  ],
+  "package_version": "0.1.0.dev1",
+  "profile": "ode-evaluator-0.1.0-draft.1",
+  "python": "3.11.18",
+  "report_format_version": "ode-report-1.0.0"
+}

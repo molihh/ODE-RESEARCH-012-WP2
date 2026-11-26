@@ -1,0 +1,1 @@
+{"diagnosis": "", "dimension_scores": {"apply": null, "discover": null, "ground_verify": 1.0, "understand": null}, "evidence_check": {"required": false, "supported": null}, "failure_reason_code": null, "failure_stage": null, "run_id": "wp2-d07-pass", "schema_version": "0.1", "task_id": "task_d07_aclnnadd_001", "verdict": "pass"}

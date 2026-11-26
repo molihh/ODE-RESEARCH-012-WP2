@@ -1,0 +1,31 @@
+{
+  "asset_id": "fd807dc4fc419264dcc123dbb0e9f9aa7e20929c269c7a4051b08a8bffcb2c8c",
+  "declared_type": "engineering_evidence",
+  "title": "aclnn_add.h",
+  "source": {
+    "uri": "git://https://gitcode.com/cann/ops-math.git@5d4daae8a7b21d87f9a2c6e11cb0d62ac0085b53/math/add/op_api/aclnn_add.h",
+    "version": "9.2.0",
+    "retrieved_at": "2026-11-24T00:00:00+00:00"
+  },
+  "content": {
+    "format": "text",
+    "full_text": "/**\n * Copyright (c) 2025 Huawei Technologies Co., Ltd.\n * This program is free software, you can redistribute it and/or modify it under the terms and conditions of\n * CANN Open Software License Agreement Version 2.0 (the \"License\").\n * Please refer to the License for details. You may not use this file except in compliance with the License.\n * THIS SOFTWARE IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,\n * INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.\n * See LICENSE in the root of the software repository for the full text of the License.\n */\n\n#ifndef OP_API_INC_ADD_H_\n#define OP_API_INC_ADD_H_\n\n#include \"aclnn/aclnn_base.h\"\n#include \"aclnn_util.h\"\n\n#ifdef __cplusplus\nextern \"C\" {\n#endif\n\n/**\n * @brief aclnnAdd的第一段接口，根据具体的计算流程，计算workspace大小。\n * @domain aclnn_math\n *\n * 算子功能：完成加法计算\n * 计算公式：\n * $$ output_i = self_i+alpha*other_i $$\n *\n * @param [in] self: npu\n * device侧的aclTensor，数据类型支持整型，浮点类型，且数据类型需要与other构成互相推导关系，shape需要与other满足broadcast关系。\n * 支持非连续的Tensor，数据格式支持ND，且数据格式需要与other一致。\n * @param [in] other: npu\n * device侧的aclTensor，数据类型支持整型，浮点类型，且数据类型需要与self构成互相推导关系，shape需要与self满足broadcast关系。\n * 支持非连续的Tensor，数据格式支持ND，且数据格式需要与self一致。\n * @param [in] alpha: host侧的aclScalar，数据类型需要可转换成self与other推导后的数据类型。\n * @param [in] out: npu\n * device侧的aclTensor，数据类型支持整型，浮点类型，且数据类型需要是self与other推导之后可转换的数据类型，shape需要是self与other\n * broadcast之后的shape，数据格式支持ND，且数据格式需要与self一致。\n * @param [out] workspaceSize: 返回用户需要在npu device侧申请的workspace大小。\n * @param [out] executor: 返回op执行器，包含算子计算流程。\n * @return aclnnStatus: 返回状态码。\n */\nACLNN_API aclnnStatus aclnnAddGetWorkspaceSize(\n    const aclTensor* self, const aclTensor* other, const aclScalar* alpha, aclTensor* out, uint64_t* workspaceSize,\n    aclOpExecutor** executor);\n\n/**\n * @brief aclnnAdd的第二段接口，用于执行计算。\n *\n * 算子功能：完成加法计算\n * 计算公式：\n * $$ output_i = self_i+alpha*other_i $$\n *\n * @param [in] workspace: 在npu device侧申请的workspace内存起址。\n * @param [in] workspace_size: 在npu device侧申请的workspace大小，由第一段接口aclnnAddGetWorkspaceSize获取。\n * @param [in] executor: op执行器，包含了算子计算流程。\n * @param [in] stream: acl stream流。\n * @return aclnnStatus: 返回状态码。\n */\nACLNN_API aclnnStatus aclnnAdd(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);\n\n/**\n * @brief aclnnAdds的第一段接口，根据具体的计算流程，计算workspace大小。\n * @domain aclnn_math\n */\nACLNN_API aclnnStatus aclnnAddsGetWorkspaceSize(\n    const aclTensor* self, const aclScalar* other, const aclScalar* alpha, aclTensor* out, uint64_t* workspaceSize,\n    aclOpExecutor** executor);\nACLNN_API aclnnStatus aclnnAdds(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);\n\n/**\n * @brief aclnnInplaceAdd的第一段接口，根据具体的计算流程，计算workspace大小。\n * @domain aclnn_math\n *\n * 算子功能：完成加法计算\n * 计算公式：\n * $$ output_i = self_i+alpha*other_i $$\n *\n * @param [in] self: npu\n * device侧的aclTensor，数据类型支持整型，浮点类型，且数据类型需要与other构成互相推导关系，shape需要与other满足broadcast关系。\n * 支持非连续的Tensor，数据格式支持ND，且数据格式需要与other一致。\n * @param [in] other: npu\n * device侧的aclTensor，数据类型支持整型，浮点类型，且数据类型需要与self构成互相推导关系，shape需要与self满足broadcast关系。\n * 支持非连续的Tensor，数据格式支持ND，且数据格式需要与self一致。\n * @param [in] alpha: host侧的aclScalar，数据类型需要可转换成self与other推导后的数据类型。\n * @param [out] workspaceSize: 返回用户需要在npu device侧申请的workspace大小。\n * @param [out] executor: 返回op执行器，包含了算子计算流程。\n * @return aclnnStatus: 返回状态码。\n */\nACLNN_API aclnnStatus aclnnInplaceAddGetWorkspaceSize(\n    const aclTensor* selfRef, const aclTensor* other, const aclScalar* alpha, uint64_t* workspaceSize,\n    aclOpExecutor** executor);\n\n/**\n * @brief aclnnInplaceAdd的第二段接口，用于执行计算。\n *\n * 算子功能：完成加法计算\n * 计算公式：\n * $$ output_i = self_i+alpha*other_i $$\n *\n * @param [in] workspace: 在npu device侧申请的workspace内存起址。\n * @param [in] workspaceSize: 在npu device侧申请的workspace大小，由第一段接口aclnnInplaceAddGetWorkspaceSize获取。\n * @param [in] executor: op执行器，包含了算子计算流程。\n * @param [in] stream: acl stream流。\n * @return aclnnStatus: 返回状态码。\n */\nACLNN_API aclnnStatus\naclnnInplaceAdd(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);\n\n/**\n * @brief aclnnInplaceAdds的第一段接口，根据具体的计算流程，计算workspace大小。\n * @domain aclnn_math\n */\nACLNN_API aclnnStatus aclnnInplaceAddsGetWorkspaceSize(\n    const aclTensor* selfRef, const aclScalar* other, const aclScalar* alpha, uint64_t* workspaceSize,\n    aclOpExecutor** executor);\n\nACLNN_API aclnnStatus\naclnnInplaceAdds(void* workspace, uint64_t workspaceSize, aclOpExecutor* executor, aclrtStream stream);\n\n#ifdef __cplusplus\n}\n#endif\n\n#endif // OP_API_INC_ADD_H_\n",
+    "sha256": "5d30cbee550d3d2fe1ca0fc995f52dd4a0c61bd4157847db25f66f243a4384ea"
+  },
+  "metadata": {
+    "document_id": "7a9ca859fd90aaee201ab610bbb1fa6462de9a6a63683b95b1fb9b560b5e23f6",
+    "repo": "https://gitcode.com/cann/ops-math.git",
+    "commit_sha": "5d4daae8a7b21d87f9a2c6e11cb0d62ac0085b53",
+    "path": "math/add/op_api/aclnn_add.h",
+    "kb_dir": "/Users/chj/Desktop/ode/ode-local/knowledge_base/cann-9.2.0-v03-engineering",
+    "kb_evidence_refs": [
+      {
+        "chunk_id": null,
+        "document_id": "7a9ca859fd90aaee201ab610bbb1fa6462de9a6a63683b95b1fb9b560b5e23f6",
+        "quote": "",
+        "locator": {}
+      }
+    ]
+  },
+  "schema_version": "0.1"
+}

@@ -1,0 +1,1 @@
+{"schema_version": "0.1", "task_id": "task_d07_aclnnadd_001", "decision": "pass", "issues": [], "revision_count": 0, "checks": {"answer_leakage": false, "answer_supported": true, "answer_unambiguous": true, "goal_alignment": true, "grader_suitable": true, "question_clear": true}}
